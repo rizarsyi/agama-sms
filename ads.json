@@ -1,1 +1,19 @@
-{}
+{
+    "agama-sms": {
+        "projectName": "agama-sms",
+        "description": "OTP authentication with SMS",
+        "type": "community",
+        "author": "syntrydy",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/syntrydy/agama-sms",
+        "githubUri": "https://github.com/syntrydy/agama-sms",
+        "license": "apache-2.0",
+        "lastUpdated": "1706193997044",
+        "tags": [
+            "authentication",
+            "community"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
