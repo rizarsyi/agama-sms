@@ -30,13 +30,14 @@
 					"inRepeatBlock": true,
 					"assignments": [
 						{
-							"variableTypeCheck": true,
+							"variableTypeCheck": false,
 							"assignmentExpression": "\"The provided credentials are not valid. Please try again!\"",
 							"assignedVariableName": "validationResult.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": true
 			},
 			"selected": true,
 			"dragging": false,
@@ -76,7 +77,8 @@
 					"logMessage": "\"Invalid credentials provided.\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -116,7 +118,8 @@
 					"logMessage": "\"Valid credentials provided.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -166,7 +169,8 @@
 				"handles": [
 					"Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41.FAILURE",
 					"Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -208,7 +212,8 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Validation Failed"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -248,7 +253,8 @@
 					"logMessage": "\"Maximum attempts reached. Password validation failed!\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -293,7 +299,8 @@
 					"arguments": "credentials.username credentials.password",
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -333,7 +340,8 @@
 					"logMessage": "\"Log the successfull  used credentials retrieval.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -375,7 +383,8 @@
 					"templatePath": "main.ftlh",
 					"asssignedVariableName": "credentials",
 					"arguments": "validationResult"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -421,7 +430,8 @@
 					"hasSuccess": "",
 					"hasFailure": "",
 					"hasRepeat": false
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -466,7 +476,8 @@
 					"arguments": [],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "passwordValidationService"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -511,7 +522,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
