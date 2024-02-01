@@ -3,6 +3,50 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+			"position": {
+				"x": 1691.0002593213155,
+				"y": 548.5792339867169
+			},
+			"type": "trigger",
+			"data": {
+				"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+				"type": "Agama-trigger-Node",
+				"parentId": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
+				"whenCondition": "",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 1691.0002593213155,
+					"y": 548.5792339867169
+				},
+				"agamaData": {
+					"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+					"parentId": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
+					"type": "Agama-trigger-Node",
+					"displayName": "Trigger OTP",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": true,
+					"nodeIcon": "fluent-mdl2:trigger-approval",
+					"flowFileName": "org.gluu.agama.sms.otp",
+					"arguments": [
+						"credentials"
+					],
+					"asssignedVariableName": "otpResult",
+					"exceptionVariableField": ""
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1691.0002593213155,
+				"y": 548.5792339867169
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-assignment-Node-acd3fdaa-a1d7-430b-9013-98e5da0db21f",
 			"position": {
 				"x": 1828.0002593213155,
@@ -37,9 +81,9 @@
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1828.0002593213155,
@@ -783,11 +827,28 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a-Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5-db8761da-9aa3-4c62-9fc3-989be43a11ac",
+			"type": "straight",
+			"source": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
+			"target": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -511.36767365921696,
-		"y": 98.44185033275988,
-		"zoom": 0.7169776240079136
+		"x": -856,
+		"y": -61,
+		"zoom": 1
 	}
 }
