@@ -13,7 +13,9 @@
             "authentication",
             "community"
         ],
-        "noDirectLaunch": [],
+        "noDirectLaunch": [
+            "org.gluu.agama.sms.otp"
+        ],
         "configs": {
             "org.gluu.agama.sms.main": {},
             "org.gluu.agama.sms.otp": {}
