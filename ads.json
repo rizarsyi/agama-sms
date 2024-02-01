@@ -14,6 +14,9 @@
             "community"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama.sms.main": {}
+        },
+        "name": "agama-sms"
     }
 }
