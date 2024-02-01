@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-80c520ea-1fc3-4a01-b067-cd53bd0af068",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-80c520ea-1fc3-4a01-b067-cd53bd0af068",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-80c520ea-1fc3-4a01-b067-cd53bd0af068",
+        "type": "Agama-start-Flow",
+        "displayName": "SMS main flow",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.agama.sms.main"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
