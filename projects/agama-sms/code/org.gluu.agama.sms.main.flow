@@ -19,9 +19,9 @@ count = Repeat 3 times max
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
-     validationResult.errorMessage = ""The provided credentials are not valid. Please try again!""
+     validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_ocxzh = {success:false, error: "Password validation failed!"}
-Finish it_ocxzh
+it_vahzn = {success:false, error: "Password validation failed!"}
+Finish it_vahzn
