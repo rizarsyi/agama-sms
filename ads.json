@@ -15,7 +15,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.sms.main": {}
+            "org.gluu.agama.sms.main": {},
+            "org.gluu.agama.sms.otp": {}
         },
         "name": "agama-sms"
     }
