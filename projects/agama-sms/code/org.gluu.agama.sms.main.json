@@ -3,9 +3,49 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
+			"position": {
+				"x": 1891.0002593213155,
+				"y": 550.5792339867169
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+				"whenCondition": "",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 1891.0002593213155,
+					"y": 550.5792339867169
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
+					"parentId": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+					"type": "Agama-log-Node",
+					"displayName": "Log SMS OTP result",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": true,
+					"logMessage": "\"SMS OTP check result: \" otpResult otpException",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1891.0002593213155,
+				"y": 550.5792339867169
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
 			"position": {
-				"x": 1691.0002593213155,
+				"x": 1689.0002593213155,
 				"y": 548.5792339867169
 			},
 			"type": "trigger",
@@ -16,7 +56,7 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1691.0002593213155,
+					"x": 1689.0002593213155,
 					"y": 548.5792339867169
 				},
 				"agamaData": {
@@ -34,13 +74,14 @@
 						"credentials"
 					],
 					"asssignedVariableName": "otpResult",
-					"exceptionVariableField": ""
-				}
+					"exceptionVariableField": "otpException"
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1691.0002593213155,
+				"x": 1689.0002593213155,
 				"y": 548.5792339867169
 			}
 		},
@@ -136,7 +177,7 @@
 			"height": 124,
 			"id": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
 			"position": {
-				"x": 1491.0002593213155,
+				"x": 1479.0002593213155,
 				"y": 548.5792339867169
 			},
 			"type": "log",
@@ -147,7 +188,7 @@
 				"whenCondition": "WhenTrue",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1491.0002593213155,
+					"x": 1479.0002593213155,
 					"y": 548.5792339867169
 				},
 				"agamaData": {
@@ -165,10 +206,10 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1491.0002593213155,
+				"x": 1479.0002593213155,
 				"y": 548.5792339867169
 			}
 		},
@@ -844,11 +885,28 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5-Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe-521cbb51-6ad1-43d2-803d-31e41c2be545",
+			"type": "straight",
+			"source": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
+			"target": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -856,
-		"y": -61,
-		"zoom": 1
+		"x": 152.9632355124204,
+		"y": 126.19072355597018,
+		"zoom": 0.5
 	}
 }
