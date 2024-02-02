@@ -11,7 +11,7 @@ count = Repeat 3 times max
      // Log the successfull  used credentials retrieval.
      Log "@info Log the successfull  used credentials retrieval."
      // Validate provided user credentials.
-     validationResult.status = Call passwordValidationService validate credentials.username credentials.password
+     validationResult.status = Call otpService validateCreds credentials.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
           // add entry in log file for successfull login attempt
@@ -25,5 +25,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_jevgv = {success:false, error: "Password validation failed!"}
-Finish it_jevgv
+it_oamiw = {success:false, error: "Password validation failed!"}
+Finish it_oamiw
