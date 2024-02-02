@@ -2,8 +2,8 @@ Flow org.gluu.agama.sms.main
      Basepath ""
 // Create variable to receive validation result
 validationResult = {}
-// // Get an instance of PasswordService Class
-passwordValidationService = Call org.gluu.agama.pw.basic.PasswordService#getInstance 
+// // Get an instance of OTPService Class
+otpService = Call org.gluu.agama.sms.OTPService#getInstance 
 // Iterate x times maximum
 count = Repeat 3 times max
      // Retrieve user credentials from UI
@@ -25,5 +25,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_oumue = {success:false, error: "Password validation failed!"}
-Finish it_oumue
+it_jevgv = {success:false, error: "Password validation failed!"}
+Finish it_jevgv
