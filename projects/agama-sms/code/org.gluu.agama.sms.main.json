@@ -376,19 +376,22 @@
 					"hasComment": true,
 					"comment": "Validate provided user credentials.",
 					"javaClassName": "",
-					"javaMethodName": "validate",
-					"javaVariableName": "passwordValidationService",
+					"javaMethodName": "validateCreds",
+					"javaVariableName": "otpService",
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"arguments": "credentials.username credentials.password",
+					"arguments": [
+						"credentials.username",
+						"credentials.password"
+					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1136.1579493308034,
@@ -565,7 +568,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -906,8 +909,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -679,
+		"y": -94,
 		"zoom": 1
 	}
 }
