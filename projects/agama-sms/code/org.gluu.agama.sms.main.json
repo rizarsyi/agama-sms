@@ -31,7 +31,8 @@
 					"logMessage": "\"SMS OTP check result: \" otpResult otpException",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -206,7 +207,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1479.0002593213155,
@@ -550,8 +551,8 @@
 					"type": "Agama-call-Node",
 					"displayName": "Init",
 					"hasComment": true,
-					"comment": "// Get an instance of PasswordService Class",
-					"javaClassName": "org.gluu.agama.pw.basic.PasswordService",
+					"comment": "// Get an instance of OTPService Class",
+					"javaClassName": "org.gluu.agama.sms.OTPService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -560,11 +561,11 @@
 					"inRepeatBlock": false,
 					"arguments": [],
 					"nodeIcon": "material-symbols:code",
-					"asssignedVariableName": "passwordValidationService"
+					"asssignedVariableName": "otpService"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -905,8 +906,8 @@
 		}
 	],
 	"viewport": {
-		"x": 152.9632355124204,
-		"y": 126.19072355597018,
-		"zoom": 0.5
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
