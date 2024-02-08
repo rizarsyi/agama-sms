@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 import io.jans.as.common.model.common.User;
+import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.common.service.common.EncryptionService;
 import io.jans.as.common.service.common.UserService;
 import io.jans.as.server.service.AuthenticationService;
