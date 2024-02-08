@@ -10,7 +10,7 @@ public abstract class OTPService {
 
     public abstract boolean validateOTPCode(String username, String code);
 
-    private static OTPService getInstance(){
+    public static OTPService getInstance(){
         return  new JansOTPService();
     }
 }
