@@ -1,7 +1,7 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Username_Password_Form
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP SMS
 	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
 <body>
 
@@ -20,7 +20,7 @@
 			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
 		  </div>
 		  <span class="text-2xl font-semi-bold leading-normal">Form</span>
-		  <p class="leading-normal">Enter your Username and Password
+		  <p class="leading-normal">Enter Your OTP Code
 		  </p>
 		</div>
 		<form method="post" class="my-8">
