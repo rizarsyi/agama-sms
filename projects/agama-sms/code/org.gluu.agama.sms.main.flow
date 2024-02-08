@@ -7,7 +7,7 @@ otpService = Call org.gluu.agama.sms.OTPService#getInstance
 // Iterate x times maximum
 count = Repeat 3 times max
      // Retrieve user credentials from UI
-     credentials = RRF "main.ftlh" validationResult
+     credentials = RRF "login.ftlh" validationResult
      // Log the successfull  used credentials retrieval.
      Log "@info Log the successfull  used credentials retrieval."
      // Validate provided user credentials.
@@ -25,5 +25,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_oamiw = {success:false, error: "Password validation failed!"}
-Finish it_oamiw
+it_wawuy = {success:false, error: "Password validation failed!"}
+Finish it_wawuy
