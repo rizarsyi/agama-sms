@@ -391,7 +391,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1136.1579493308034,
@@ -469,13 +469,15 @@
 					"inRepeatBlock": true,
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "main.ftlh",
+					"templatePath": "login.ftlh",
 					"asssignedVariableName": "credentials",
-					"arguments": "validationResult"
+					"arguments": [
+						"validationResult"
+					]
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 727.7894873327011,
 				"y": 264.1842309990511
@@ -909,8 +911,8 @@
 		}
 	],
 	"viewport": {
-		"x": -679,
-		"y": -94,
+		"x": -404,
+		"y": 184,
 		"zoom": 1
 	}
 }
