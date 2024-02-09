@@ -35,7 +35,7 @@
 				<input type="text" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 			  </div>
 			  <div class="flex justify-center text-center mt-5">
-				<a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
+				<a class="flex items-center text-green-700 hover:text-green-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
 				  </i></a>
 			  </div>
 			</div>
