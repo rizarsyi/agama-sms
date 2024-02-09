@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 import io.jans.as.common.model.common.User;
-import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.common.service.common.EncryptionService;
 import io.jans.as.common.service.common.UserService;
 import io.jans.as.server.service.AuthenticationService;
@@ -37,11 +36,12 @@ public class JansOTPService extends OTPService {
     @Override
     public boolean sendOTPCode(String username, String phoneNumber) {
         try{
-            logger.info("Sending OTP Code via SMS to {}. client OTP ", phoneNumber);
+            logger.info("Sending OTP Code via SMS to {}.", username);
+            logger.info("Input params  {} and {}.", username, phoneNumber);
             String phone = getUserPhoneNumber();
-            logger.info("User phone number is {} for user {} .", phone, authenticationService.getAuthenticatedUser());
+            logger.info("User phone number is {} for user {} .", phone, authenticationService.getAuthenticatedUser().toString());
             String otpCode = generateOTpCode(OTP_CODE_LENGTH);
-            logger.info("Generated OTP code is {} .", otpCode);
+            logger.info("Generated OTP code is {}.", otpCode);
             associateGeneratedCodeToUser(username, otpCode);
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
@@ -50,6 +50,7 @@ public class JansOTPService extends OTPService {
             return true;
         }catch (Exception exception){
             logger.error("Error occur while sending  OTP Code via SMS to {} .", phoneNumber);
+            logger.error("Error: {} .", exception.getMessage());
             return false;
         }
     }
@@ -61,6 +62,7 @@ public class JansOTPService extends OTPService {
             return true;
         }catch (Exception exception){
             logger.info("OTP Code {} is valid for the associated user.", code);
+            logger.error("Error: {} .", exception.getMessage());
             return false;
         }
     }
@@ -101,6 +103,7 @@ public class JansOTPService extends OTPService {
             }
         }catch (Exception exception){
             logger.error("Error associating OTP SMS code to user {} found in the database .", username);
+            logger.error("Error: {} .", exception.getMessage());
             return false;
         }
     }
