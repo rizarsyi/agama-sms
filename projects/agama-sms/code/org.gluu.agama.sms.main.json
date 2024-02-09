@@ -654,8 +654,7 @@
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"arguments": [
-						"credentials.username",
-						"credentials.password"
+						"credentials.username"
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpCodeSent"
@@ -984,8 +983,8 @@
 		}
 	],
 	"viewport": {
-		"x": -687,
-		"y": -190,
+		"x": -1252,
+		"y": -153,
 		"zoom": 1
 	}
 }
