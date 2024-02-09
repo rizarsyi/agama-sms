@@ -36,7 +36,7 @@
 			  </div>
 			  <div class="flex flex-col space-y-5">
 				<div>
-				  <button type="button" class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
+				  <button type="button" class="flex flex-row items-center justify-center text-center border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
 					Verify Account
 				  </button>
 				</div>
