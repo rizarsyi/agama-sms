@@ -17,7 +17,7 @@
 	  <div class="container mx-auto">
 		<div class="max-w-sm mx-auto md:max-w-lg">
 		  <div class="w-full">
-			<div class="bg-white h-64 py-3 rounded text-center">
+			<div class="bg-white h-64 py-4 rounded text-center">
 			  <h1 class="text-2xl font-bold">OTP Verification
 			  </h1>
 			  <div class="flex flex-col mt-4">
@@ -34,7 +34,7 @@
 				<input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 				<input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 			  </div>
-			  <div class="flex flex-col space-y-5">
+			  <div class="flex flex-col space-y-3">
 				<div>
 				  <button type="button" class="flex flex-row items-center justify-center text-center border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
 					Verify Account
