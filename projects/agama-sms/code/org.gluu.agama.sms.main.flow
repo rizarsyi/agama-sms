@@ -26,5 +26,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_kaaoa = {success:false, error: "Password validation failed!"}
-Finish it_kaaoa
+it_czyga = {success:false, error: "Password validation failed!"}
+Finish it_czyga
