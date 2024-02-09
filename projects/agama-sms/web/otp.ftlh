@@ -27,16 +27,17 @@
 				[/#if]
 			  </div>
 			  <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
-				<input type="text" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="text" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="text" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="text" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="text" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="text" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 			  </div>
 			  <div class="flex justify-center text-center mt-5">
-				<a class="flex items-center text-green-700 hover:text-green-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
-				  </i></a>
+				<a class="flex items-center text-green-700 hover:text-green-900 cursor-pointer">
+				  <span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1"></i>
+				</a>
 			  </div>
 			</div>
 		  </div>
