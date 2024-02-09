@@ -21,8 +21,10 @@
 			  <h1 class="text-2xl font-bold">OTP Verification
 			  </h1>
 			  <div class="flex flex-col mt-4">
+				[#if phoneNumberMask??]
 				<span>Enter the OTP you received at</span>
-				<span class="font-bold">+91 ******876</span>
+				<span class="font-bold">${phoneNumberMask}</span>
+				[/#if]
 			  </div>
 			  <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
 				<input type="text" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
