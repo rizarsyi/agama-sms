@@ -93,7 +93,7 @@ public class JansOTPService extends OTPService {
 
     private boolean associateGeneratedCodeToUser(String username, String code){
         try{
-            User user = getUser(USERNAME, username);
+            User user = authenticationService.getAuthenticatedUser();
             if(user!=null){
                 user.setAttribute(OTP_SMS_CODE, code, true);
                 userService.updateUser(user);
