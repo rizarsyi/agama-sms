@@ -3,9 +3,47 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP SMS
 	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
-<body><div class="h-screen bg-white-500 py-20 px-3"><div class="container mx-auto"><div class="max-w-sm mx-auto md:max-w-lg"><div class="w-full"><div class="bg-white h-64 py-3 rounded text-center"><h1 class="text-2xl font-bold">OTP Verification
-			  </h1><div class="flex flex-col mt-4"><span>Enter the OTP you received at</span><span class="font-bold">+91 ******876</span></div><div id="otp" class="flex flex-row justify-center text-center px-2 mt-5"><input type="text" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"><input type="text" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"><input type="text" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"><input type="text" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"><input type="text" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"><input type="text" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded"></div><div class="flex justify-center text-center mt-5"><a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
-				  </i></a></div></div></div></div></div></div></body>
+<body>
+
+  
+	
+	
+	
+	
+	
+  
+  
+	<div class="h-screen bg-gray-500 py-20 px-3">
+	  <div class="container mx-auto">
+		<div class="max-w-sm mx-auto md:max-w-lg">
+		  <div class="w-full">
+			<div class="bg-white h-64 py-3 rounded text-center">
+			  <h1 class="text-2xl font-bold">OTP Verification
+			  </h1>
+			  <div class="flex flex-col mt-4">
+				<span>Enter the OTP you received at</span>
+				<span class="font-bold">+91 ******876</span>
+			  </div>
+			  <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
+				<input type="text" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="text" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="text" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="text" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="text" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				<input type="text" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+			  </div>
+			  <div class="flex justify-center text-center mt-5">
+				<a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
+				  </i></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+  
+</body>
 
 <script>
 	window.onload = function () {
