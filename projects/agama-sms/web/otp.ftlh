@@ -36,13 +36,13 @@
 			  </div>
 			  <div class="flex flex-col space-y-5">
 				<div>
-				  <button type="button" class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-blue-700 border-none text-white text-sm shadow-sm">
+				  <button type="button" class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-green-700 border-none text-white text-sm shadow-sm">
 					Verify Account
 				  </button>
 				</div>
-				<div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500">
+				<div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 				  <p>Didn't recieve code?
-				  </p> 
+				  </p>
 				  <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600">Resend</a>
 				</div>
 			  </div>
