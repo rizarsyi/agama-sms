@@ -133,8 +133,8 @@
 			"height": 124,
 			"id": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
 			"position": {
-				"x": 1479.0002593213155,
-				"y": 548.5792339867169
+				"x": 1483.0002593213155,
+				"y": 547.5792339867169
 			},
 			"type": "log",
 			"data": {
@@ -144,8 +144,8 @@
 				"whenCondition": "WhenTrue",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1479.0002593213155,
-					"y": 548.5792339867169
+					"x": 1483.0002593213155,
+					"y": 547.5792339867169
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
@@ -156,17 +156,17 @@
 					"comment": "add entry in log file for successfull login attempt",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": true,
-					"logMessage": "\"Valid credentials provided.\"",
+					"logMessage": "\"Valid credentials provided for user \" credentials.username",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1479.0002593213155,
-				"y": 548.5792339867169
+				"x": 1483.0002593213155,
+				"y": 547.5792339867169
 			}
 		},
 		{
@@ -174,8 +174,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41",
 			"position": {
-				"x": 1365.447566324162,
-				"y": 321.36872131941766
+				"x": 1368.447566324162,
+				"y": 316.36872131941766
 			},
 			"parentId": "Agama-call-Node-94260a36-bbff-446c-a414-1e171ddae895",
 			"type": "when",
@@ -186,8 +186,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1365.447566324162,
-					"y": 321.36872131941766
+					"x": 1368.447566324162,
+					"y": 316.36872131941766
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41",
@@ -215,8 +215,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1365.447566324162,
-				"y": 321.36872131941766
+				"x": 1368.447566324162,
+				"y": 316.36872131941766
 			},
 			"dragging": false
 		},
