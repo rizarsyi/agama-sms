@@ -9,6 +9,7 @@ import com.twilio.type.PhoneNumber;
 import io.jans.as.common.model.common.User;
 import io.jans.as.common.service.common.EncryptionService;
 import io.jans.as.common.service.common.UserService;
+import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.server.service.AuthenticationService;
 import io.jans.agama.engine.service.FlowService;
 
@@ -117,7 +118,5 @@ public class JansOTPService extends OTPService {
             return phone;
         return phone.substring(0,2)+"x".repeat(maskLength) + phone.substring(phone.length()-3);
     }
-
-
 
 }
