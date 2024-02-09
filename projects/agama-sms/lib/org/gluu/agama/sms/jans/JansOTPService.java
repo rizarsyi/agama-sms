@@ -37,9 +37,9 @@ public class JansOTPService extends OTPService {
     public boolean sendOTPCode(String username) {
         try{
             logger.info("Sending OTP Code via SMS to {}.", username);
-            logger.info("Input params  {} and {}.", username, phoneNumber);
             String phone = getUserPhoneNumber();
-            logger.info("User phone number is {} for user {} .", phone, authenticationService.getAuthenticatedUser().toString());
+            String maskedPone = maskPhone(phone);
+            logger.info("The user {} with number {} and mask {}.", username, phone, maskedPone);
             String otpCode = generateOTpCode(OTP_CODE_LENGTH);
             logger.info("Generated OTP code is {}.", otpCode);
             associateGeneratedCodeToUser(username, otpCode);
@@ -49,7 +49,7 @@ public class JansOTPService extends OTPService {
             logger.error("OTP Code has been successfully send to {} at {} .", sms.getTo(), sms.getDateSent());
             return true;
         }catch (Exception exception){
-            logger.error("Error occur while sending  OTP Code via SMS to {} .", phoneNumber);
+            logger.error("Error occur while sending  OTP Code via SMS to {} .", username);
             logger.error("Error: {} .", exception.getMessage());
             return false;
         }
@@ -106,6 +106,16 @@ public class JansOTPService extends OTPService {
             logger.error("Error: {} .", exception.getMessage());
             return false;
         }
+    }
+
+    private String maskPhone(String phone) {
+        if(phone == null) {
+            return "NULL";
+        }
+        int maskLength = phone.length() - 6;
+        if (maskLength <= 0)
+            return phone;
+        return phone.substring(0,2)+"x".repeat(maskLength) + phone.substring(phone.length()-3);
     }
 
 
