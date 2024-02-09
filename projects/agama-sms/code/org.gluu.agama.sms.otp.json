@@ -71,7 +71,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": false,
-					"logMessage": "\"Start sms otp step\" credentials",
+					"logMessage": "\"Start sms otp step\" credentials.username",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"hasSuccess": "",
@@ -81,7 +81,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 230,
@@ -168,7 +168,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 465.5323688288436,
@@ -256,8 +256,8 @@
 		}
 	],
 	"viewport": {
-		"x": 288.0214606540226,
-		"y": 190.45562117715752,
-		"zoom": 0.6070974421975236
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
