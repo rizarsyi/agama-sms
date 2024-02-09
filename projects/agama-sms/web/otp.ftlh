@@ -34,7 +34,7 @@
 				<input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 				<input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 			  </div>
-			  <div class="flex flex-col space-y-3">
+			  <div class="flex flex-row justify-center text-center px-2 mt-5">
 				<div>
 				  <button type="button" class="flex flex-row items-center justify-center text-center border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
 					Verify Account
