@@ -35,10 +35,20 @@
 				<input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 			  </div>
 			  <div class="flex justify-center text-center mt-5">
-				<a class="flex items-center text-green-700 hover:text-green-900 cursor-pointer">
-				  <span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1"></i>
-				</a>
+				<a class="flex items-center text-green-700 hover:text-green-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1">
+				  </i></a>
 			  </div>
+			  <div class="flex flex-col space-y-5">
+              <div>
+                <button class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-blue-700 border-none text-white text-sm shadow-sm">
+                  Verify Account
+                </button>
+              </div>
+
+              <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500">
+                <p>Didn't recieve code?</p> <a class="flex flex-row items-center text-blue-600" href="http://" target="_blank" rel="noopener noreferrer">Resend</a>
+              </div>
+            </div>
 			</div>
 		  </div>
 		</div>
