@@ -13,33 +13,34 @@
 	
   
   
-	<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
-	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle">
-		<div class="flex flex-col items-center space-y-3">
-		  <div class="flex">
-			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
-		  </div>
-		  <span class="text-2xl font-semi-bold leading-normal">Form</span>
-		  <p class="leading-normal">Enter Your OTP Code
-		  </p>
-		</div>
-		<form method="post" class="my-8">
-		  <div class="relative mb-2">
-			<label for="username" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">
-			  Username
-			</label>
-			<input type="text" id="username" name="username" autofocus="" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2 focus:border-green-700">
-		  </div>
-		  <div class="space-y-9">
-			<div class="text-sm flex justify-center items-center">
-			  <button type="submit" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">
-				Submit
-			  </button>
-			</div>
-		  </div>
-		</form>
-	  </div>
-	</div>
+	<div class="h-screen bg-blue-500 py-20 px-3">
+    <div class="container mx-auto">
+        <div class="max-w-sm mx-auto md:max-w-lg">
+            <div class="w-full">
+                <div class="bg-white h-64 py-3 rounded text-center">
+                      <h1 class="text-2xl font-bold">OTP Verification</h1>
+                      <div class="flex flex-col mt-4">
+                          <span>Enter the OTP you received at</span>
+                          <span class="font-bold">+91 ******876</span>
+                      </div>
+                      
+                      <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="first" maxlength="1"> 
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="second" maxlength="1"> 
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="third" maxlength="1"> 
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="fourth" maxlength="1">
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="fifth" maxlength="1"> 
+            <input class="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="sixth" maxlength="1">
+                      </div>
+                      
+                      <div class="flex justify-center text-center mt-5">
+                          <a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer"><span class="font-bold">Resend OTP</span><i class="bx bx-caret-right ml-1"></i></a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   
   
 </body>
