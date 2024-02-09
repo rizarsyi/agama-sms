@@ -5,7 +5,7 @@
 			"height": 124,
 			"id": "finish-2c0cf2e8-6a38-4fa8-a4a8-66dd97ec59bd",
 			"position": {
-				"x": 862.3591017267574,
+				"x": 712.3591017267574,
 				"y": 28.35281796546485
 			},
 			"type": "finish",
@@ -17,7 +17,7 @@
 				"inRepeatBlock": false,
 				"handles": [],
 				"position": {
-					"x": 862.3591017267574,
+					"x": 712.3591017267574,
 					"y": 28.35281796546485
 				},
 				"agamaData": {
@@ -39,7 +39,7 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 862.3591017267574,
+				"x": 712.3591017267574,
 				"y": 28.35281796546485
 			}
 		},
@@ -73,7 +73,11 @@
 					"inRepeatBlock": false,
 					"logMessage": "\"Start sms otp step\" credentials",
 					"logLevel": "info",
-					"nodeIcon": "octicon:log-16"
+					"nodeIcon": "octicon:log-16",
+					"hasSuccess": "",
+					"hasFailure": "",
+					"hasNoRepeat": false,
+					"hasRepeat": false
 				},
 				"skake": false
 			},
@@ -119,7 +123,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -129,71 +133,25 @@
 		{
 			"width": 170,
 			"height": 124,
-			"id": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
-			"position": {
-				"x": 430,
-				"y": 30
-			},
-			"type": "call",
-			"data": {
-				"id": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
-				"type": "Agama-call-Node",
-				"parentId": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1",
-				"whenCondition": "",
-				"inRepeatBlock": false,
-				"position": {
-					"x": 430,
-					"y": 30
-				},
-				"agamaData": {
-					"id": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
-					"parentId": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1",
-					"type": "Agama-call-Node",
-					"displayName": "Send OTP Via SMS",
-					"hasComment": true,
-					"comment": "",
-					"javaClassName": "",
-					"javaMethodName": "sendOTPCode",
-					"javaVariableName": "otpService",
-					"exceptionVariableField": "",
-					"callType": "Call method on instance",
-					"whenCondition": "",
-					"inRepeatBlock": false,
-					"arguments": "credentials.username",
-					"nodeIcon": "material-symbols:code",
-					"asssignedVariableName": "codeSent"
-				},
-				"skake": false
-			},
-			"selected": false,
-			"dragging": false,
-			"positionAbsolute": {
-				"x": 430,
-				"y": 30
-			}
-		},
-		{
-			"width": 170,
-			"height": 124,
 			"id": "Agama-rrf-Node-9f56190a-d82a-4a0a-aaff-94b24c862de4",
 			"position": {
-				"x": 655.0647376576869,
-				"y": 30.058453896394553
+				"x": 465.5323688288436,
+				"y": 28.411271861859404
 			},
 			"type": "rrf",
 			"data": {
 				"id": "Agama-rrf-Node-9f56190a-d82a-4a0a-aaff-94b24c862de4",
 				"type": "Agama-rrf-Node",
-				"parentId": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
+				"parentId": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1",
 				"whenCondition": "",
 				"inRepeatBlock": "",
 				"position": {
-					"x": 655.0647376576869,
-					"y": 30.058453896394553
+					"x": 465.5323688288436,
+					"y": 28.411271861859404
 				},
 				"agamaData": {
 					"id": "Agama-rrf-Node-9f56190a-d82a-4a0a-aaff-94b24c862de4",
-					"parentId": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
+					"parentId": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1",
 					"type": "Agama-rrf-Node",
 					"displayName": "Collect OTP Code",
 					"hasComment": true,
@@ -210,11 +168,11 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 655.0647376576869,
-				"y": 30.058453896394553
+				"x": 465.5323688288436,
+				"y": 28.411271861859404
 			},
 			"parentId": "Agama-call-Node-6bc744cd-407e-4f5f-9053-23517ae49b88",
 			"whenCondition": "",
@@ -289,11 +247,17 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1-Agama-rrf-Node-9f56190a-d82a-4a0a-aaff-94b24c862de4-6f70fc6e-13ce-4e34-ad1a-987e239019b1",
+			"type": "straight",
+			"source": "Agama-log-Node-e4d3a453-0a82-473d-b84f-8466debdc7e1",
+			"target": "Agama-rrf-Node-9f56190a-d82a-4a0a-aaff-94b24c862de4"
 		}
 	],
 	"viewport": {
-		"x": 87,
-		"y": 120,
-		"zoom": 1
+		"x": 288.0214606540226,
+		"y": 190.45562117715752,
+		"zoom": 0.6070974421975236
 	}
 }
