@@ -1,6 +1,6 @@
 Flow org.gluu.agama.sms.otp
      Basepath ""
      Inputs credentials otpService
-Log "@info Start sms otp step" credentials
+Log "@info Start sms otp step" credentials.username
 userCode = RRF "otp.ftlh" 
 Finish userCode
