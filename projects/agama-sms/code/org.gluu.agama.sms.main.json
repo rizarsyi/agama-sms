@@ -34,7 +34,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1888.0002593213155,
 				"y": 546.5792339867169
@@ -72,14 +72,15 @@
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.agama.sms.otp",
 					"arguments": [
-						"credentials"
+						"credentials",
+						"otpService"
 					],
 					"asssignedVariableName": "otpResult",
 					"exceptionVariableField": "otpException"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1689.0002593213155,
@@ -911,8 +912,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1037,
-		"y": -86,
+		"x": -1266,
+		"y": -130,
 		"zoom": 1
 	}
 }
