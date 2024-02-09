@@ -6,7 +6,7 @@ public abstract class OTPService {
 
     public abstract boolean validateCreds(String username, String password);
 
-    public abstract boolean sendOTPCode(String username, String userPhoneNumber);
+    public abstract boolean sendOTPCode(String username);
 
     public abstract boolean validateOTPCode(String username, String code);
 
