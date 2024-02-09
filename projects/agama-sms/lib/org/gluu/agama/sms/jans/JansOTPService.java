@@ -34,7 +34,7 @@ public class JansOTPService extends OTPService {
     }
 
     @Override
-    public boolean sendOTPCode(String username, String phoneNumber) {
+    public boolean sendOTPCode(String username) {
         try{
             logger.info("Sending OTP Code via SMS to {}.", username);
             logger.info("Input params  {} and {}.", username, phoneNumber);
