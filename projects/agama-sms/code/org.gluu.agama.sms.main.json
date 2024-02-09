@@ -5,8 +5,8 @@
 			"height": 124,
 			"id": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
 			"position": {
-				"x": 2111.0002593213158,
-				"y": 550.5792339867169
+				"x": 2086.0002593213158,
+				"y": 545.5792339867169
 			},
 			"type": "log",
 			"data": {
@@ -16,8 +16,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 2111.0002593213158,
-					"y": 550.5792339867169
+					"x": 2086.0002593213158,
+					"y": 545.5792339867169
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-bb863f6f-637d-43ee-bcd2-a6decf641abe",
@@ -36,8 +36,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 2111.0002593213158,
-				"y": 550.5792339867169
+				"x": 2086.0002593213158,
+				"y": 545.5792339867169
 			},
 			"dragging": false
 		},
@@ -659,9 +659,10 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpCodeSent"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1679.0002593213155,
@@ -983,8 +984,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1266,
-		"y": -130,
+		"x": -1129,
+		"y": -244,
 		"zoom": 1
 	}
 }
