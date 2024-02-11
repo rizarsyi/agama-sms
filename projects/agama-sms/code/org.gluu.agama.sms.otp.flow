@@ -12,5 +12,5 @@ otpValidationResult = Call otpService validateOTPCode credentials.username otpCo
 // Check if OTP validation has succeed
 When otpValidationResult is true
      Finish otpValidationResult
-otpUiFeedback.errorMessage = "The provided code is not valid"
+otpUiFeedback.errorMessage = "The provided code is not valid."
 Finish otpUiFeedback.errorMessage
