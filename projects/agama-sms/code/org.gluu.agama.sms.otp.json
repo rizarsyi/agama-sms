@@ -123,7 +123,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -164,11 +164,12 @@
 					"asssignedVariableName": "userCode",
 					"position": {
 						"x": 580
-					}
+					},
+					"arguments": "maskedPhone"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 465.5323688288436,
