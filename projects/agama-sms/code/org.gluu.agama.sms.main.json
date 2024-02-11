@@ -702,7 +702,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1879.0002593213155,
@@ -741,7 +741,8 @@
 					"flowFileName": "org.gluu.agama.sms.otp",
 					"arguments": [
 						"credentials",
-						"otpService"
+						"otpService",
+						"maskedPhone"
 					],
 					"asssignedVariableName": "otpResult",
 					"exceptionVariableField": "otpException",
@@ -751,7 +752,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2068.0002593213158,
@@ -1041,8 +1042,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1410,
-		"y": -291,
+		"x": -1357,
+		"y": -127,
 		"zoom": 1
 	}
 }
