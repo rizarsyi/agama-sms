@@ -13,6 +13,7 @@ import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.server.service.AuthenticationService;
 import io.jans.agama.engine.service.FlowService;
 
+import java.lang.reflect.Array;
 import java.security.SecureRandom;
 
 public class JansOTPService extends OTPService {
@@ -35,7 +36,8 @@ public class JansOTPService extends OTPService {
     }
 
     @Override
-    public boolean sendOTPCode(String username) {
+    public String[] sendOTPCode(String username) {
+        String result[]={"false"};
         try{
             logger.info("Sending OTP Code via SMS to {}.", username);
             String phone = getUserPhoneNumber();
@@ -48,11 +50,13 @@ public class JansOTPService extends OTPService {
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message sms = Message.creator(TO_NUMBER,FROM_NUMBER, "Here is your OTP Code: "+otpCode).create();
             logger.error("OTP Code has been successfully send to {} at {} .", sms.getTo(), sms.getDateSent());
-            return true;
+            result[0] = "true";
+            result[1] = maskedPone;
+            return result;
         }catch (Exception exception){
             logger.error("Error occur while sending  OTP Code via SMS to {} .", username);
             logger.error("Error: {} .", exception.getMessage());
-            return false;
+            return result;
         }
     }
 
@@ -93,10 +97,15 @@ public class JansOTPService extends OTPService {
 
     private boolean associateGeneratedCodeToUser(String username, String code){
         try{
+            logger.info("============One");
             User user = authenticationService.getAuthenticatedUser();
-            if(user!=null){
+            logger.info("============Two");
+            if(user != null){
+                logger.info("============Three");
                 user.setAttribute(OTP_SMS_CODE, code, true);
+                logger.info("============Four");
                 userService.updateUser(user);
+                logger.info("============Five");
                 return true;
             }else{
                 logger.warn("No user with "+USERNAME+" {} found in the database .", username);
