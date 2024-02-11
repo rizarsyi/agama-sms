@@ -94,6 +94,7 @@ public class JansOTPService extends OTPService {
             User user = authenticationService.getAuthenticatedUser();
             if(user != null){
                 logger.info("============ user {}", user.toString());
+                logger.info("============ get user {}", getUser("uid", username).toString());
                 user.setAttribute(OTP_SMS_CODE, code, true);
                 userService.updateUser(user);
                 logger.info("============Five");
@@ -124,10 +125,10 @@ public class JansOTPService extends OTPService {
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message.creator(TO_NUMBER, FROM_NUMBER, "Hi "+userName+ ", Welcome to AgamaLab. This is your OTP Code to complete your login process: "+otpCode).create();
-            logger.error("OTP Code has been successfully send to {} at {} .", userName, phone);
+            logger.error("OTP Code has been successfully send to {} on phone number {} .", userName, phone);
             return true;
         }catch (Exception exception){
-            logger.error("Error Sending OTP code {} to {}: error {} .", userName, phone, exception.getMessage());
+            logger.error("Error Sending OTP code {} to user {} on pone number {} : error {} .", otpCode, userName, phone, exception);
             return false;
         }
     }
