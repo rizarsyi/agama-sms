@@ -81,7 +81,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 230,
@@ -113,7 +113,7 @@
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "credentials otpService",
+					"inputs": "credentials otpService maskedPhone",
 					"configs": "",
 					"flowname": "org.gluu.agama.sms.otp"
 				},
@@ -123,7 +123,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
