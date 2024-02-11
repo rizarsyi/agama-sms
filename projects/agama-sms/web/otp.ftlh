@@ -19,35 +19,35 @@
 		  <div class="w-full">
 			<div class="bg-white h-80 py-4 rounded text-center">
 			  <form method="post" class="my-8">
-			  <h1 class="text-2xl font-bold">OTP Verification
-			  </h1>
-			  <div class="flex flex-col mt-4">
-				[#if maskedPhone??]
-				<span>Enter the OTP you received at</span>
-				<span class="font-bold">${maskedPhone}</span>
-				[/#if]
-			  </div>
-			  <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
-				<input type="number" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="number" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="number" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="number" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				<input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-			  </div>
-			  <div class="flex flex-row justify-center text-center px-2 mt-5">
-				<div class="flex flex-row justify-center text-center px-2">
-				  <button type="button" class="flex flex-row items-center justify-center text-center border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
-					Verify Account
-				  </button>
+				<h1 class="text-2xl font-bold">OTP Verification
+				</h1>
+				<div class="flex flex-col mt-4">
+				  [#if maskedPhone??]
+				  <span>Enter the OTP you received at</span>
+				  <span class="font-bold">${maskedPhone}</span>
+				  [/#if]
 				</div>
-				<div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
-				  <p>Didn't recieve code?
-				  </p>
-				  <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600">Resend</a>
+				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
+				  <input type="number" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 				</div>
-			  </div>
-				</form>
+				<div class="flex flex-row justify-center text-center px-2 mt-5">
+				  <div class="flex flex-row justify-center text-center px-2">
+					<button type="button" class="flex flex-row items-center justify-center text-center border rounded-xl outline-none py-3 bg-green-700 border-none text-white text-sm shadow-sm">
+					  Verify Account
+					</button>
+				  </div>
+				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
+					<p>Didn't recieve code?
+					</p>
+					<a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600">Resend</a>
+				  </div>
+				</div>
+			  </form>
 			</div>
 		  </div>
 		</div>
