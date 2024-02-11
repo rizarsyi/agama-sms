@@ -2,7 +2,6 @@ package org.gluu.agama.sms;
 
 import org.gluu.agama.sms.jans.JansOTPService;
 
-import java.lang.reflect.Array;
 
 public abstract class OTPService {
 
