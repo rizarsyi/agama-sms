@@ -18,6 +18,7 @@
 		<div class="max-w-sm mx-auto md:max-w-lg">
 		  <div class="w-full">
 			<div class="bg-white h-80 py-4 rounded text-center">
+			  <form method="post" class="my-8">
 			  <h1 class="text-2xl font-bold">OTP Verification
 			  </h1>
 			  <div class="flex flex-col mt-4">
@@ -46,6 +47,7 @@
 				  <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600">Resend</a>
 				</div>
 			  </div>
+				</form>
 			</div>
 		  </div>
 		</div>
