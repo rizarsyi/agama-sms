@@ -27,5 +27,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_osbfc = {success:false, error: "Password validation failed!"}
-Finish it_osbfc
+it_muste = {success:false, error: "Password validation failed!"}
+Finish it_muste
