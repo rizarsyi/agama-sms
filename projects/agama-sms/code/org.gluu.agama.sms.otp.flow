@@ -7,4 +7,7 @@ otpCode = RRF "otp.ftlh" maskedPhone
 // Log code retrieve from user via UI
 Log "@info Code retrieve from the UI is:" otpCode 
 otpValidationResult = Call otpService validateOTPCode credentials.username otpCode
-Finish userCode
+// Check if OTP validation has succeed
+When otpValidationResult is true
+     Finish otpValidationResult
+Finish __________
