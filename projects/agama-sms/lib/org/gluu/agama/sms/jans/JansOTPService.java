@@ -45,10 +45,7 @@ public class JansOTPService extends OTPService {
             String otpCode = generateOTpCode(OTP_CODE_LENGTH);
             logger.info("Generated OTP code is {}.", otpCode);
             associateGeneratedCodeToUser(username, otpCode);
-            PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
-            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-            Message sms = Message.creator(TO_NUMBER,FROM_NUMBER, "Here is your OTP Code: "+otpCode).create();
-            logger.error("OTP Code has been successfully send to {} at {} .", sms.getTo(), sms.getDateSent());
+            sendTwilioSms(username,phone, otpCode);
             return maskedPone;
         }catch (Exception exception){
             logger.error("Error occur while sending  OTP Code via SMS to {} .", username);
@@ -94,13 +91,10 @@ public class JansOTPService extends OTPService {
 
     private boolean associateGeneratedCodeToUser(String username, String code){
         try{
-            logger.info("============One");
             User user = authenticationService.getAuthenticatedUser();
-            logger.info("============Two");
             if(user != null){
-                logger.info("============Three");
+                logger.info("============ user {}", user.toString());
                 user.setAttribute(OTP_SMS_CODE, code, true);
-                logger.info("============Four");
                 userService.updateUser(user);
                 logger.info("============Five");
                 return true;
@@ -109,8 +103,8 @@ public class JansOTPService extends OTPService {
                 return false;
             }
         }catch (Exception exception){
-            logger.error("Error associating OTP SMS code to user {} found in the database .", username);
-            logger.error("Error: {} .", exception.getMessage());
+            logger.error("Error associating OTP SMS code to user {}.", username);
+            logger.error("Error: {} .", exception);
             return false;
         }
     }
@@ -122,7 +116,20 @@ public class JansOTPService extends OTPService {
         int maskLength = phone.length() - 6;
         if (maskLength <= 0)
             return phone;
-        return phone.substring(0,2)+"x".repeat(maskLength) + phone.substring(phone.length()-3);
+        return phone.substring(0,3)+"x".repeat(maskLength) + phone.substring(phone.length()-3);
+    }
+
+    private boolean sendTwilioSms(String userName, String phone, String otpCode){
+        try{
+            PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
+            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+            Message.creator(TO_NUMBER, FROM_NUMBER, "Hi "+userName+ ", Welcome to AgamaLab. This is your OTP Code to complete your login process: "+otpCode).create();
+            logger.error("OTP Code has been successfully send to {} at {} .", userName, phone);
+            return true;
+        }catch (Exception exception){
+            logger.error("Error Sending OTP code {} to {}: error {} .", userName, phone, exception.getMessage());
+            return false;
+        }
     }
 
 }
