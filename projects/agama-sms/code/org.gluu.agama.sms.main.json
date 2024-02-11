@@ -32,11 +32,12 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "The Validation OTP code",
+					"returnVariable": "Fail validating OTP code",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "End flow with Error"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -81,7 +82,8 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "End flow sucessfully"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -131,7 +133,8 @@
 				"handles": [
 					"Agama-when-Node-f0385ac1-9ad0-4fa1-8081-05a66d150247.FAILURE",
 					"Agama-when-Node-f0385ac1-9ad0-4fa1-8081-05a66d150247.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
