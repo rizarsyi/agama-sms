@@ -8,7 +8,7 @@ public abstract class OTPService {
 
     public abstract boolean validateCreds(String username, String password);
 
-    public abstract String[] sendOTPCode(String username);
+    public abstract String sendOTPCode(String username);
 
     public abstract boolean validateOTPCode(String username, String code);
 
@@ -16,3 +16,4 @@ public abstract class OTPService {
         return  new JansOTPService();
     }
 }
+
