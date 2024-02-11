@@ -2,12 +2,15 @@ Flow org.gluu.agama.sms.otp
      Basepath ""
      Inputs credentials otpService maskedPhone
 Log "@info Start retrieving OTP Code for user: " credentials.username
+otpUiFeedback = {}
+otpUiFeedback.maskedPhone = maskedPhone
 // Retrieve code from user via UI
-otpCode = RRF "otp.ftlh" maskedPhone
+otpCode = RRF "otp.ftlh" otpUiFeedback
 // Log code retrieve from user via UI
 Log "@info Code retrieve from the UI is:" otpCode 
 otpValidationResult = Call otpService validateOTPCode credentials.username otpCode
 // Check if OTP validation has succeed
 When otpValidationResult is true
      Finish otpValidationResult
-Finish __________
+otpUiFeedback.errorMessage = "The provided code is not valid"
+Finish otpUiFeedback.errorMessage
