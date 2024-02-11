@@ -82,7 +82,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1507.5323688288436,
@@ -123,11 +123,12 @@
 					"flowfilename": "",
 					"returnVariable": "otpValidationResult",
 					"finishMode": "withVariable",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "End succesfully"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1371.5323688288436,
@@ -644,8 +645,8 @@
 		}
 	],
 	"viewport": {
-		"x": -893,
-		"y": 61,
+		"x": -611,
+		"y": 42,
 		"zoom": 1
 	}
 }
