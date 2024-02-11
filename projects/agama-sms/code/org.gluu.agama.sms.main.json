@@ -699,7 +699,8 @@
 					"logMessage": "\"OTP generated and send to the user\" codeSendResult",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
