@@ -696,7 +696,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"OTP generated and send to the user\" maskedPhone",
+					"logMessage": "\"OTP generated and send to: \" maskedPhone",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -1041,8 +1041,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1136,
-		"y": -151,
+		"x": -1410,
+		"y": -291,
 		"zoom": 1
 	}
 }
