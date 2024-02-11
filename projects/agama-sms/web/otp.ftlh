@@ -21,9 +21,9 @@
 			  <h1 class="text-2xl font-bold">OTP Verification
 			  </h1>
 			  <div class="flex flex-col mt-4">
-				[#if phoneNumberMask??]
+				[#if maskedPhone??]
 				<span>Enter the OTP you received at</span>
-				<span class="font-bold">${phoneNumberMask}</span>
+				<span class="font-bold">${maskedPhone}</span>
 				[/#if]
 			  </div>
 			  <div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
