@@ -36,8 +36,7 @@ public class JansOTPService extends OTPService {
     }
 
     @Override
-    public String[] sendOTPCode(String username) {
-        String result[]={"false"};
+    public String sendOTPCode(String username) {
         try{
             logger.info("Sending OTP Code via SMS to {}.", username);
             String phone = getUserPhoneNumber();
@@ -50,13 +49,11 @@ public class JansOTPService extends OTPService {
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message sms = Message.creator(TO_NUMBER,FROM_NUMBER, "Here is your OTP Code: "+otpCode).create();
             logger.error("OTP Code has been successfully send to {} at {} .", sms.getTo(), sms.getDateSent());
-            result[0] = "true";
-            result[1] = maskedPone;
-            return result;
+            return maskedPone;
         }catch (Exception exception){
             logger.error("Error occur while sending  OTP Code via SMS to {} .", username);
             logger.error("Error: {} .", exception.getMessage());
-            return result;
+            return null;
         }
     }
 
