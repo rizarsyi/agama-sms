@@ -1,6 +1,10 @@
 Flow org.gluu.agama.sms.otp
      Basepath ""
      Inputs credentials otpService maskedPhone
-Log "@info Start sms otp step" credentials.username
-userCode = RRF "otp.ftlh" maskedPhone
+Log "@info Start retrieving OTP Code for user: " credentials.username
+// Retrieve code from user via UI
+otpCode = RRF "otp.ftlh" maskedPhone
+// Log code retrieve from user via UI
+Log "@info Code retrieve from the UI is:" otpCode 
+otpValidationResult = Call otpService validateOTPCode credentials.username otpCode
 Finish userCode
