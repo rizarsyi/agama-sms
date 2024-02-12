@@ -17,16 +17,18 @@ count = Repeat 3 times max
           // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided for user " credentials.username
           maskedPhone = Call otpService sendOTPCode credentials.username
+          // Assign username variable
+          username = credentials.username
           Log "@info OTP generated and send to: " maskedPhone
-          otpFeedBack | otpException = Trigger org.gluu.agama.sms.otp credentials otpService maskedPhone
+          otpFeedBack | otpException = Trigger org.gluu.agama.sms.otp otpService username maskedPhone
           Log "@info SMS OTP check result: " otpFeedBack
           // Check if OTP validation vas okay
           When otpFeedBack.status is true
-               it_wpqpi = {success:true, data: { userId: credentials.username}}
-               Finish it_wpqpi
+               it_vqigk = {success:true, data: { userId: credentials.username}}
+               Finish it_vqigk
           // Closig the entire flow with error.
-          it_vciap = {success:false, error: "The flow has been completed with error"}
-          Finish it_vciap
+          it_shvte = {success:false, error: "The flow has been completed with error"}
+          Finish it_shvte
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -34,5 +36,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_mucat = {success:false, error: "Password validation failed!"}
-Finish it_mucat
+it_prlxz = {success:false, error: "Password validation failed!"}
+Finish it_prlxz
