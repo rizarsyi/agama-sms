@@ -43,12 +43,12 @@
 				  [/#if]
 				</div>
 				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
-				  <input type="number" id="1" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="2" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="3" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="4" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="5" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="6" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="1" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="2" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="3" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="4" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="5" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="6" min="0" max="9" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <input type="text" id="code" name="code" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
