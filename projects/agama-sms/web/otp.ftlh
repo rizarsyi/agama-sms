@@ -72,7 +72,6 @@
 	  var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
 	  for (let i = 0; i < codeFields.length; i++) {
-		console.log(codeFields[i].value)
 		userCode = userCode.concat(codeFields[i].value)
 	  }
 	  if (userCode === '' || userCode.length !==6) {
@@ -80,8 +79,8 @@
 		return false
 	  }
 	  else{
-		console.log(userCode)
-		document.querySelectorAll('input[type="text"]').value = userCode
+		alert(userCode)
+		document.getElementById("code").value = userCode
 	  }
 	  return true
 	}
