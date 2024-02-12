@@ -22,14 +22,14 @@
 				<h1 class="text-2xl font-bold">OTP Verification
 				</h1>
 				<div class="flex flex-col mt-4">
+				  [#if errorMessage??]
+				  <div role="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
+					<span class="font-medium">Danger alert!</span>${errorMessage}
+				  </div>
+				  [/#if]
 				  [#if maskedPhone??]
 				  <span>Enter the OTP you received at</span>
 				  <span class="font-bold">${maskedPhone}</span>
-				  [/#if]
-				  [#if errorMessage??]
-				  <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-					<span class="font-medium">Danger alert!</span>${errorMessage}
-				  </div>
 				  [/#if]
 				</div>
 				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
