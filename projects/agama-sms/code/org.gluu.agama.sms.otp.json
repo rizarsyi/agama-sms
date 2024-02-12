@@ -31,7 +31,8 @@
 					"logMessage": "\"Information received by the called:\" username maskedPhone",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -41,8 +42,8 @@
 			}
 		},
 		{
-			"width": 170,
-			"height": 124,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
 			"type": "start",
 			"sourcePosition": "right",
@@ -65,11 +66,11 @@
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "otpService credentials.username maskedPhone",
+					"inputs": "otpService username maskedPhone",
 					"configs": "",
 					"flowname": "org.gluu.agama.sms.otp"
 				},
-				"skake": false
+				"skake": true
 			},
 			"position": {
 				"x": 30,
