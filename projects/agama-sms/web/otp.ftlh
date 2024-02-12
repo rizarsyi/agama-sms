@@ -43,7 +43,7 @@
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <input type="text" id="userCode" maxlength="1" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
 				  <div class="flex flex-row justify-center text-center px-2">
-					<button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
+					<button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
 				  </div>
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
