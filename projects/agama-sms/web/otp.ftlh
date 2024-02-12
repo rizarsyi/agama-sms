@@ -72,7 +72,7 @@
 	  var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
 	  for (let i = 0; i < codeFields.length; i++) {
-		console.log(codeFields.value)
+		console.log(codeFields[i].value)
 		userCode = userCode.concat(codeFields[i].value)
 	  }
 	  if (userCode === '' || userCode.length !==6) {
