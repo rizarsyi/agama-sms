@@ -128,7 +128,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1371.5323688288436,
@@ -303,13 +303,13 @@
 					"comment": "Log code retrieve from user via UI",
 					"whenCondition": "",
 					"inRepeatBlock": "",
-					"logMessage": "\"Code retrieve from the UI is:\" otpCode ",
+					"logMessage": "\"Code retrieve from the UI is:\" otpCode.userCode ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 815.5323688288436,
@@ -455,7 +455,9 @@
 					"position": {
 						"x": 580
 					},
-					"arguments": "otpUiFeedback"
+					"arguments": [
+						"otpUiFeedback"
+					]
 				},
 				"skake": false
 			},
@@ -645,8 +647,8 @@
 		}
 	],
 	"viewport": {
-		"x": -611,
-		"y": 42,
-		"zoom": 1
+		"x": 229.17490172402722,
+		"y": 291.61727038995224,
+		"zoom": 0.6070974421975237
 	}
 }
