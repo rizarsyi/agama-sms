@@ -164,7 +164,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1811.2633353251103,
@@ -523,13 +523,18 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "maskedPhone",
 							"assignedVariableName": "otpUiFeedback.maskedPhone"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "username",
+							"assignedVariableName": "otpUiFeedback.username"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -865,8 +870,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1154,
-		"y": -23,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
