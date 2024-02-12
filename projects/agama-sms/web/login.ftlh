@@ -25,8 +25,10 @@
 			<span class="absolute px-3 font-medium text-white-900 -translate-x-1-2 bg-white left-1-2 dark:text-white dark:bg-gray-900">Welcome</span>
 		  </div>
 		  [#if errorMessage??]
-		  <p class="leading-normal errorMessage">${errorMessage}
-		  </p>
+		
+		  <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+  <span class="font-medium">Error: </span> ${errorMessage}
+</div>
 		  [/#if]
 		</div>
 		<form method="post" class="my-8">
