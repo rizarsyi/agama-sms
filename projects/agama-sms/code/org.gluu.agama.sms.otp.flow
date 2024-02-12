@@ -1,4 +1,4 @@
 Flow org.gluu.agama.sms.otp
      Basepath ""
-     Inputs otpService credentials.username maskedPhone
+     Inputs otpService username maskedPhone
 Log "@info Information received by the called:" username maskedPhone
