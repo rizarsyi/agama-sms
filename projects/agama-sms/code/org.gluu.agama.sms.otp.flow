@@ -18,3 +18,5 @@ otpCount = Repeat 3 times max
      otpUiFeedback.errorMessage = "The provided code is not valid"
 //  Maximum attempts reached. OTP validation failed!
 Log "@error Maximum attempts reached. OTP validation failed!"
+// OTP validation has failed
+Finish otpValidationResult
