@@ -7,13 +7,13 @@ otpUiFeedback = {}
 otpUiFeedback.maskedPhone = maskedPhone
 otpCount = Repeat 3 times max
      otpCreds = RRF "otp.ftlh" otpUiFeedback
-     Log "@info OTP Code provided by the user is : " otpCreds.code otpCount
+     Log "@info OTP Code provided by the user is : " otpCreds.code idx[0]
      otpValidationResult | otpValidationException = Call otpService validateOTPCode username otpCreds.code
      Log "@info OTP validation result is:" otpValidationResult otpValidationException
      // If otp validation was successful
      When otpValidationResult is true
           Finish otpValidationResult
-     Log "@error Invalid code provided"
+     Log "@error Invalid code provided. Number of attempt: " idx[0]
      // Provide feedback about the error message to user
      otpUiFeedback.errorMessage = "The provided code is not valid"
 //  Maximum attempts reached. OTP validation failed!
