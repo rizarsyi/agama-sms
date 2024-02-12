@@ -1,35 +1,110 @@
-[
-  {
-    "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
-        "type": "Agama-start-Flow",
-        "displayName": "SMS OTP Flow",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.sms.otp"
-      }
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-c1e3cf40-4373-43bc-a945-1d31205b550b",
+			"position": {
+				"x": 230,
+				"y": 30
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-c1e3cf40-4373-43bc-a945-1d31205b550b",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+				"whenCondition": "",
+				"inRepeatBlock": false,
+				"position": {
+					"x": 230,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-c1e3cf40-4373-43bc-a945-1d31205b550b",
+					"parentId": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+					"type": "Agama-log-Node",
+					"displayName": "Log flow imputs",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": false,
+					"logMessage": "\"Information received by the called:\" username maskedPhone",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 230,
+				"y": 30
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 30,
+					"y": 30
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+					"type": "Agama-start-Flow",
+					"displayName": "SMS OTP Flow",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "otpService credentials.username maskedPhone",
+					"configs": "",
+					"flowname": "org.gluu.agama.sms.otp"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 30,
+				"y": 30
+			}
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15-Agama-log-Node-c1e3cf40-4373-43bc-a945-1d31205b550b-269825f3-b232-48a1-8f0e-228bfc318745",
+			"type": "straight",
+			"source": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+			"target": "Agama-log-Node-c1e3cf40-4373-43bc-a945-1d31205b550b",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
+	"viewport": {
+		"x": 153.25796672286924,
+		"y": 91.98208626984743,
+		"zoom": 0.7169776240079139
+	}
+}
