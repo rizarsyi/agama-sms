@@ -15,4 +15,4 @@ otpCount = Repeat 3 times max
           Finish otpValidationResult
      Log "@error Invalid code provided"
      // Provide feedback about the error message to user
-     otpUiFeedback.errorMessage = ""The provided code is not valid""
+     otpUiFeedback.errorMessage = "The provided code is not valid"
