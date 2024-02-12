@@ -303,13 +303,13 @@
 					"comment": "Log code retrieve from user via UI",
 					"whenCondition": "",
 					"inRepeatBlock": "",
-					"logMessage": "\"Code retrieve from the UI is:\" otpCreds.userCode ",
+					"logMessage": "\"Code retrieve from the UI is:\" otpCreds",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 815.5323688288436,
@@ -362,7 +362,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1015.5323688288436,
@@ -647,8 +647,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -472,
+		"y": 87,
 		"zoom": 1
 	}
 }
