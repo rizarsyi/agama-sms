@@ -89,7 +89,6 @@
 		return false
 	  }
 	  else{
-		alert(userCode)
 		document.getElementById("code").value = userCode
 	  }
 	  return true
