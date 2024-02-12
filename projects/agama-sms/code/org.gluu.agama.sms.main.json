@@ -118,7 +118,7 @@
 					"type": "Agama-when-Node",
 					"conditions": [
 						{
-							"variable": "otpResult",
+							"variable": "otpFeedBack.status",
 							"operator": "is",
 							"dataValue": "true",
 							"combinator": "none"
@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2505.0002593213158,
 				"y": 603.5792339867169
@@ -171,7 +171,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"SMS OTP check result: \" otpResult",
+					"logMessage": "\"SMS OTP check result: \" otpFeedBack",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -895,7 +895,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2068.0002593213158,
@@ -1238,8 +1238,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1407,
-		"y": -255,
+		"x": -1715,
+		"y": -295,
 		"zoom": 1
 	}
 }
