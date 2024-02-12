@@ -30,12 +30,12 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "Closig the entire flow with error.",
 					"flowfilename": "",
-					"returnVariable": "Fail validating OTP code",
+					"returnVariable": "The flow has been completed with error",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "End flow with Error"
+					"displayName": "Closing the flow"
 				},
 				"skake": false
 			},
@@ -81,11 +81,11 @@
 					"returnVariable": "{ userId: credentials.username}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "End flow sucessfully"
+					"displayName": "Close flow successfully"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2618.0002593213158,
@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2505.0002593213158,
 				"y": 603.5792339867169
@@ -1238,8 +1238,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1715,
-		"y": -295,
+		"x": -1602,
+		"y": -301,
 		"zoom": 1
 	}
 }
