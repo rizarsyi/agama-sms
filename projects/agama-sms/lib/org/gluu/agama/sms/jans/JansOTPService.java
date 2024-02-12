@@ -47,8 +47,7 @@ public class JansOTPService extends OTPService {
             sendTwilioSms(username,phone, message);
             return maskedPone;
         }catch (Exception exception){
-            logger.error("Error occur while sending  OTP Code via SMS to {} .", username);
-            logger.error("Error: {} .", exception.getMessage());
+            logger.error("Error occur while sending  OTP Code via SMS to {}, error {}.", username, exception);
             return null;
         }
     }
@@ -58,7 +57,7 @@ public class JansOTPService extends OTPService {
         try{
             logger.info("Validating OTP Code {} provided by {}.", code, username);
            String storedCode= getUser(USERNAME,username).getAttribute(OTP_SMS_CODE);
-           if(storedCode.equalsIgnoreCase(code)){
+           if(code.equalsIgnoreCase(storedCode)){
                logger.info("OTP Code {} provided by {} is valid", code, username);
                return true;
            }
@@ -121,6 +120,7 @@ public class JansOTPService extends OTPService {
 
     private boolean sendTwilioSms(String userName, String phone, String message){
         try{
+            logger.info("Twilio settings: {} {} {}.", ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER);
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message.creator(TO_NUMBER, FROM_NUMBER, message).create();
