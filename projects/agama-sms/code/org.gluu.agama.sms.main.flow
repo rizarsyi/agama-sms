@@ -22,10 +22,11 @@ count = Repeat 3 times max
           Log "@info SMS OTP check result: " otpFeedBack
           // Check if OTP validation vas okay
           When otpFeedBack.status is true
-               it_jtgxj = {success:true, data: { userId: credentials.username}}
-               Finish it_jtgxj
-          it_dwljz = {success:false, error: "Fail validating OTP code"}
-          Finish it_dwljz
+               it_wpqpi = {success:true, data: { userId: credentials.username}}
+               Finish it_wpqpi
+          // Closig the entire flow with error.
+          it_vciap = {success:false, error: "The flow has been completed with error"}
+          Finish it_vciap
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -33,5 +34,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_ilotp = {success:false, error: "Password validation failed!"}
-Finish it_ilotp
+it_mucat = {success:false, error: "Password validation failed!"}
+Finish it_mucat
