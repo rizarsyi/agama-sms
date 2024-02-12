@@ -5,6 +5,7 @@ Log "@info Information received by the called:" username maskedPhone
 // Declare a variable for Ui feedback messages
 otpUiFeedback = {}
 otpUiFeedback.maskedPhone = maskedPhone
+otpUiFeedback.username = username
 otpCount = Repeat 3 times max
      otpCreds = RRF "otp.ftlh" otpUiFeedback
      Log "@info OTP Code provided by the user is : " otpCreds.code idx[0]
