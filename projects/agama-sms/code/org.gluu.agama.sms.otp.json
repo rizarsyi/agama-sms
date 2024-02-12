@@ -31,12 +31,13 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"The provided code is not valid\"",
+							"assignmentExpression": "The provided code is not valid",
 							"assignedVariableName": "otpUiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": true
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -76,7 +77,8 @@
 					"logMessage": "\"Invalid code provided\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
