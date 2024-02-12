@@ -181,7 +181,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1258.5323688288436,
 				"y": 82.4112718618594
@@ -362,7 +362,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1015.5323688288436,
@@ -647,7 +647,7 @@
 		}
 	],
 	"viewport": {
-		"x": -174,
+		"x": -828,
 		"y": 224,
 		"zoom": 1
 	}
