@@ -69,7 +69,8 @@
 	  form.onsubmit = handleFormValidation;
 	};
 	function handleFormValidation() {
-	  var username = document.getElementById('username').value
+	  const codeFields = document.querySelectorAll('input[type="number"]');
+	  const hiddenField = document.querySelectorAll('input[type="text"]');
 	  if (username === '') {
 		alert('Username is required')
 		return false
