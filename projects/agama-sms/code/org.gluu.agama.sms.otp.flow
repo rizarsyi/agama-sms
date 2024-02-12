@@ -7,7 +7,7 @@ otpUiFeedback.maskedPhone = maskedPhone
 // Retrieve code from user via UI
 otpCreds = RRF "otp.ftlh" otpUiFeedback
 // Log code retrieve from user via UI
-Log "@info Code retrieve from the UI is:" otpCreds
+Log "@info Code retrieve from the UI is:" otpCreds.code
 otpValidationResult = Call otpService validateOTPCode credentials.username otpCreds.code
 // Check if OTP validation has succeed
 When otpValidationResult is true
