@@ -5,10 +5,10 @@ Log "@info Start retrieving OTP Code for user: " credentials.username
 otpUiFeedback = {}
 otpUiFeedback.maskedPhone = maskedPhone
 // Retrieve code from user via UI
-otpCode = RRF "otp.ftlh" otpUiFeedback
+otpCreds = RRF "otp.ftlh" otpUiFeedback
 // Log code retrieve from user via UI
-Log "@info Code retrieve from the UI is:" otpCode.userCode 
-otpValidationResult = Call otpService validateOTPCode credentials.username otpCode.userCode
+Log "@info Code retrieve from the UI is:" otpCreds.userCode 
+otpValidationResult = Call otpService validateOTPCode credentials.username otpCreds.userCode
 // Check if OTP validation has succeed
 When otpValidationResult is true
      Finish otpValidationResult
