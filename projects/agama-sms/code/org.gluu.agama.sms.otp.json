@@ -33,9 +33,10 @@
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "OTP validation has fail"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1080,
@@ -157,13 +158,13 @@
 					"comment": "",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": true,
-					"logMessage": "\"Invalid code provided\"",
+					"logMessage": "\"Invalid code provided. Number of attempt: \" idx[0]",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1811.2633353251103,
@@ -385,7 +386,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code otpCount",
+					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code idx[0]",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -864,8 +865,8 @@
 		}
 	],
 	"viewport": {
-		"x": -146.74203327713076,
-		"y": 151.9820862698474,
-		"zoom": 0.7169776240079139
+		"x": -1154,
+		"y": -23,
+		"zoom": 1
 	}
 }
