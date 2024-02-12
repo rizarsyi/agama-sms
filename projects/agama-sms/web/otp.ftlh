@@ -34,7 +34,7 @@
 				<div class="flex flex-col mt-4">
 				  [#if errorMessage??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
-					<span class="font-medium">Danger alert!</span>${errorMessage}
+					<span class="font-medium">Error: </span>${errorMessage}
 				  </div>
 				  [/#if]
 				  [#if maskedPhone??]
