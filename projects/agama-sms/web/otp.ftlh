@@ -26,6 +26,11 @@
 				  <span>Enter the OTP you received at</span>
 				  <span class="font-bold">${maskedPhone}</span>
 				  [/#if]
+				  [#if errorMessage??]
+				  <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+					<span class="font-medium">Danger alert!</span>${errorMessage}
+				  </div>
+				  [/#if]
 				</div>
 				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
 				  <input type="number" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
@@ -37,7 +42,7 @@
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <div class="flex flex-row justify-center text-center px-2">
-					<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
+					<button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
 				  </div>
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
