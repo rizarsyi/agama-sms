@@ -303,7 +303,7 @@
 					"comment": "Log code retrieve from user via UI",
 					"whenCondition": "",
 					"inRepeatBlock": "",
-					"logMessage": "\"Code retrieve from the UI is:\" otpCode.userCode ",
+					"logMessage": "\"Code retrieve from the UI is:\" otpCreds.userCode ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -351,7 +351,7 @@
 					"inRepeatBlock": "",
 					"arguments": [
 						"credentials.username",
-						"otpCode.userCode"
+						"otpCreds.userCode"
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpValidationResult",
@@ -451,7 +451,7 @@
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "otp.ftlh",
-					"asssignedVariableName": "otpCode",
+					"asssignedVariableName": "otpCreds",
 					"position": {
 						"x": 580
 					},
@@ -647,8 +647,8 @@
 		}
 	],
 	"viewport": {
-		"x": -40.82509827597278,
-		"y": 253.61727038995224,
-		"zoom": 0.6070974421975237
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
