@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2505.0002593213158,
 				"y": 603.5792339867169
@@ -887,7 +887,7 @@
 						"otpService",
 						"maskedPhone"
 					],
-					"asssignedVariableName": "otpResult",
+					"asssignedVariableName": "otpFeedBack",
 					"exceptionVariableField": "otpException",
 					"position": {
 						"x": 2043.0002593213155
@@ -895,7 +895,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2068.0002593213158,
@@ -1238,8 +1238,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1608,
-		"y": -363,
+		"x": -1407,
+		"y": -255,
 		"zoom": 1
 	}
 }
