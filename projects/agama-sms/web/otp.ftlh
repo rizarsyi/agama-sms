@@ -33,18 +33,19 @@
 				  [/#if]
 				</div>
 				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
-				  <input type="number" id="first" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="second" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="third" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="fourth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="fifth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
-				  <input type="number" id="sixth" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="1" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="2" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="3" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="4" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="5" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
+				  <input type="number" id="6" maxlength="1" class="m-2 border h-10 w-10 text-center form-control rounded">
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
+				  <input type="text" id="first" maxlength="1" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
 				  <div class="flex flex-row justify-center text-center px-2">
 					<button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
 				  </div>
-				  </div>
+				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
