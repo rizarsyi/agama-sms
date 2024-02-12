@@ -309,7 +309,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 815.5323688288436,
@@ -351,7 +351,7 @@
 					"inRepeatBlock": "",
 					"arguments": [
 						"credentials.username",
-						"otpCode"
+						"otpCode.userCode"
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpValidationResult",
@@ -362,7 +362,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1015.5323688288436,
@@ -647,8 +647,8 @@
 		}
 	],
 	"viewport": {
-		"x": 229.17490172402722,
-		"y": 291.61727038995224,
+		"x": -40.82509827597278,
+		"y": 253.61727038995224,
 		"zoom": 0.6070974421975237
 	}
 }
