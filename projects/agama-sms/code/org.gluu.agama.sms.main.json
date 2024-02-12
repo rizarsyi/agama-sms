@@ -39,7 +39,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2754.0002593213158,
 				"y": 548.5792339867169
@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2505.0002593213158,
 				"y": 603.5792339867169
@@ -171,7 +171,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"SMS OTP check result: \" otpResult otpException",
+					"logMessage": "\"SMS OTP check result: \" otpResult",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -1238,8 +1238,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2134,
-		"y": -416,
+		"x": -1608,
+		"y": -363,
 		"zoom": 1
 	}
 }
