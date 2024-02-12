@@ -22,6 +22,16 @@
 				<h1 class="text-2xl font-bold">OTP Verification
 				</h1>
 				<div class="flex flex-col mt-4">
+				  [#if username??]
+				  <div role="alert" class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
+					<span class="font-medium">Info!</span> Welcome back ${username}. 
+					[#if maskedPhone??]
+					<span class="font-medium">An OTP code has been send to you on your mobile phone.</span> 
+					[/#if]
+				  </div>
+				  [/#if]
+				</div>
+				<div class="flex flex-col mt-4">
 				  [#if errorMessage??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
 					<span class="font-medium">Danger alert!</span>${errorMessage}
