@@ -13,19 +13,19 @@ import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.server.service.AuthenticationService;
 import io.jans.agama.engine.service.FlowService;
 
-import java.lang.reflect.Array;
 import java.security.SecureRandom;
+import java.util.HashMap;
 
 public class JansOTPService extends OTPService {
 
     private static final Logger logger = LoggerFactory.getLogger(FlowService.class);
     private static AuthenticationService authenticationService = CdiUtil.bean(AuthenticationService.class);
+    private HashMap<String, String> userCodes = new HashMap<>();
     private static UserService userService = CdiUtil.bean(UserService.class);
     private static final String OTP_SMS_CODE = "SMSCode";
     private static final String USERNAME = "uid";
-    public static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
-    public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
-    public static final PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber(System.getenv("TWILIO_FROM_NUMBER")) ;
+    public static final String ACCOUNT_SID = "AC3dcsssssssssssssssssssssss";
+    public static final String AUTH_TOKEN = "820sssssssssaaaaaaaaaaaaaaaaaa";
     public static final int OTP_CODE_LENGTH = System.getenv("OTP_CODE_LENGTH")!=null? Integer.parseInt(System.getenv("OTP_CODE_LENGTH")) :6;
     @Override
     public boolean validateCreds(String username, String password) {
@@ -56,12 +56,21 @@ public class JansOTPService extends OTPService {
     public boolean validateOTPCode(String username, String code) {
         try{
             logger.info("Validating OTP Code {} provided by {}.", code, username);
+            String storeCode = userCodes.getOrDefault(username,"NULL");
+            if(storeCode.equalsIgnoreCase(code)){
+                userCodes.remove(username);
+                return true;
+            }
+            return false;
+            /*
            String storedCode= getUser(USERNAME,username).getAttribute(OTP_SMS_CODE);
            if(code.equalsIgnoreCase(storedCode)){
                logger.info("OTP Code {} provided by {} is valid", code, username);
                return true;
            }
             return false;
+
+             */
         }catch (Exception exception){
             logger.info("OTP Code {} provided by {} is not valid. Error: {} ", code, username, exception);
             return false;
@@ -93,6 +102,7 @@ public class JansOTPService extends OTPService {
 
     private boolean associateGeneratedCodeToUser(String username, String code){
         try{
+            /*
             User user = authenticationService.getAuthenticatedUser();
             if(user != null){
                 user.setAttribute(OTP_SMS_CODE, code, true);
@@ -102,6 +112,9 @@ public class JansOTPService extends OTPService {
                 logger.warn("No user with "+USERNAME+" {} found in the database .", username);
                 return false;
             }
+             */
+            userCodes.put(username,code);
+            return  true;
         }catch (Exception exception){
             logger.error("Error associating OTP SMS code to user {}, error: {} .", username, exception);
             return false;
@@ -120,8 +133,9 @@ public class JansOTPService extends OTPService {
 
     private boolean sendTwilioSms(String userName, String phone, String message){
         try{
-            logger.info("Twilio settings: {} {} {}.", ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER);
+            PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber("+237696534361") ;
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
+            logger.info("Twilio settings: {} {} {}.", ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER);
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message.creator(TO_NUMBER, FROM_NUMBER, message).create();
             logger.info("OTP Code has been successfully send to {} on phone number {} .", userName, phone);
