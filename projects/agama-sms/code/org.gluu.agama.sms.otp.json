@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-064f782c-6ade-40b5-a888-8c555752ab15",
+        "type": "Agama-start-Flow",
+        "displayName": "SMS OTP Flow",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.agama.sms.otp"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
