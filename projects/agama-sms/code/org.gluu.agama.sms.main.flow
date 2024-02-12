@@ -18,14 +18,14 @@ count = Repeat 3 times max
           Log "@info Valid credentials provided for user " credentials.username
           maskedPhone = Call otpService sendOTPCode credentials.username
           Log "@info OTP generated and send to: " maskedPhone
-          otpResult | otpException = Trigger org.gluu.agama.sms.otp credentials otpService maskedPhone
+          otpFeedBack | otpException = Trigger org.gluu.agama.sms.otp credentials otpService maskedPhone
           Log "@info SMS OTP check result: " otpResult
           // Check if OTP validation vas okay
           When otpResult is true
-               it_vkfut = {success:true, data: { userId: credentials.username}}
-               Finish it_vkfut
-          it_ostfu = {success:false, error: "Fail validating OTP code"}
-          Finish it_ostfu
+               it_bzzxm = {success:true, data: { userId: credentials.username}}
+               Finish it_bzzxm
+          it_pfllh = {success:false, error: "Fail validating OTP code"}
+          Finish it_pfllh
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -33,5 +33,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_dlcln = {success:false, error: "Password validation failed!"}
-Finish it_dlcln
+it_pmwjh = {success:false, error: "Password validation failed!"}
+Finish it_pmwjh
