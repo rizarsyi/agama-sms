@@ -78,8 +78,8 @@
 	window.onload = function () {
 	  var form = document.querySelector("form");
 	  form.onsubmit = handleFormValidation;
-	  var myElement = document.getElementById('1');
-	  myElement.onpaste = function(e) {
+	  var firstCodeInput = document.getElementById('1');
+	  firstCodeInput.onpaste = function(e) {
 		var pastedText = undefined;
 		if (window.clipboardData && window.clipboardData.getData) {
 		  pastedText = window.clipboardData.getData('Text');
