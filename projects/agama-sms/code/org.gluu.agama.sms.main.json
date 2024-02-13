@@ -30,12 +30,12 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "Closig the entire flow with error.",
+					"comment": "Closing the main flow with error.",
 					"flowfilename": "",
-					"returnVariable": "The flow has been completed with error",
+					"returnVariable": "The flow has been completed with error.",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "Closing the flow"
+					"displayName": "Closing the main flow"
 				},
 				"skake": false
 			},
@@ -76,7 +76,7 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "The main flow has completed successfully.",
 					"flowfilename": "",
 					"returnVariable": "{ userId: credentials.username}",
 					"finishMode": "withSuccess",
@@ -85,7 +85,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2768.0002593213158,
@@ -168,10 +168,10 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log SMS OTP result",
 					"hasComment": true,
-					"comment": "",
+					"comment": "OTP Code validation is completed",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"SMS OTP check result: \" otpFeedBack",
+					"logMessage": "\"OTP Code validation completed with status: \" otpFeedBack",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -834,9 +834,9 @@
 					"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
 					"parentId": "Agama-log-Node-0b87511a-8528-47cf-bd66-97f892c01d8a",
 					"type": "Agama-trigger-Node",
-					"displayName": "Trigger OTP",
+					"displayName": "Launch OTP UI",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Launch the UI to collect OTP Code from user",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
@@ -947,7 +947,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2078.0002593213158,
@@ -1307,8 +1307,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1414,
-		"y": -154,
+		"x": -1924,
+		"y": -218,
 		"zoom": 1
 	}
 }
