@@ -24,7 +24,7 @@
 				<div class="flex flex-col mt-4">
 				  [#if username??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
-					<span class="font-medium"></span>Welcome back ${username}!. 
+					<span class="font-medium"></span>Welcome back ${username}!
 					[#if maskedPhone??]
 					<span class="font-medium">An OTP code has been send to you on your mobile phone.</span> 
 					[/#if]
