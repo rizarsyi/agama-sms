@@ -1,12 +1,13 @@
+// Start the excecution of the main flow
 Flow org.gluu.agama.sms.main
      Basepath ""
-// Create variable to receive validation result
+// Create variable to receive validation result.
 validationResult = {}
-// // Get an instance of OTPService Class
+// Get an instance of OTPService Class. 
 otpService = Call org.gluu.agama.sms.OTPService#getInstance 
-// Iterate x times maximum
+// Iterate x times maximum.
 count = Repeat 3 times max
-     // Retrieve user credentials from UI
+     // Retrieve user credentials from UI.
      credentials = RRF "login.ftlh" validationResult
      // Log the successfull  used credentials retrieval.
      Log "@info Log the successfull  used credentials retrieval."
@@ -14,26 +15,26 @@ count = Repeat 3 times max
      validationResult.status = Call otpService validateCreds credentials.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
-          // add entry in log file for successfull login attempt
-          Log "@info Valid credentials provided for user " credentials.username
-          // Generate and send OTP code to authenticated user
+          // add entry in log file for successfull login attempt.
+          Log "@info Valid credentials provided for user: " credentials.username
+          // Generate and send OTP code to authenticated user.
           maskedPhone = Call otpService sendOTPCode credentials.username
-          // Assign username variable
+          // Assign username variable.
           username = credentials.username
-          // The OTP Code has been send to user
+          // The OTP Code has been send to user.
           Log "@info OTP generated and send to: " maskedPhone
-          // Launch the UI to collect OTP Code from user
+          // Launch the UI to collect OTP Code from user.
           otpFeedBack | otpException = Trigger org.gluu.agama.sms.otp otpService username maskedPhone
-          // OTP Code validation is completed
+          // OTP Code validation is completed.
           Log "@info OTP Code validation completed with status: " otpFeedBack
           // Check if OTP validation vas okay
           When otpFeedBack.success is true
                // The main flow has completed successfully.
-               it_xmuex = {success:true, data: { userId: credentials.username}}
-               Finish it_xmuex
+               it_hzity = {success:true, data: { userId: credentials.username}}
+               Finish it_hzity
           // Closing the main flow with error.
-          it_cgwzq = {success:false, error: "The flow has been completed with error."}
-          Finish it_cgwzq
+          it_lxhsy = {success:false, error: "The flow has been completed with error."}
+          Finish it_lxhsy
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -41,5 +42,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_yehvj = {success:false, error: "Password validation failed!"}
-Finish it_yehvj
+it_tyskw = {success:false, error: "Password validation failed!"}
+Finish it_tyskw
