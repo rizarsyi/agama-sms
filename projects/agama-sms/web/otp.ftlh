@@ -61,7 +61,7 @@
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
 					</p>
-					<a href="#" id="resendButton" class="text-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Resend</a>
+					<button type="submit" id="resendButton" class="text-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Resend</button>
 				  </div>
 				</div>
 			  </form>
@@ -99,28 +99,27 @@
 	function handleResend() {
 	  document.getElementById("resendCode").value = "true"
 	  var form = document.querySelector("form");
-	  form.onsubmit();
 	}
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
 	  if(resend === "true"){
 		console.log("Start submitting")
 		return true
-	  }else{
-		var userCode=""
-	  var codeFields = document.querySelectorAll('input[type="number"]')
-	  for (let i = 0; i < codeFields.length; i++) {
-		userCode = userCode.concat(codeFields[i].value)
-	  }
-	  if (userCode === '' || userCode.length !== 6) {
-		return false
 	  }
 	  else{
-		document.getElementById("code").value = userCode
+		var userCode=""
+		var codeFields = document.querySelectorAll('input[type="number"]')
+		for (let i = 0; i < codeFields.length; i++) {
+		  userCode = userCode.concat(codeFields[i].value)
+		}
+		if (userCode === '' || userCode.length !== 6) {
+		  return false
+		}
+		else{
+		  document.getElementById("code").value = userCode
+		}
+		return true
 	  }
-	  return true
-	  }
-	  
 	}
   </script>
 </html>
