@@ -98,11 +98,13 @@
 	};
 	function handleResend() {
 	  document.getElementById("resendCode").value = "true"
+	  alert(document.getElementById("resendCode").value)
 	  var form = document.querySelector("form");
 	  form.onsubmit();
 	}
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
+	  alert(resend)
 	  if(resend === "true"){
 		return true
 	  }
