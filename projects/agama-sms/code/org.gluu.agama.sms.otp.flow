@@ -13,7 +13,7 @@ y = Repeat 3 times max
      // Show UI to collect OTP code from user.
      otpCreds = RRF "otp.ftlh" otpUiFeedback
      // Add log entry with collected code in log file.
-     Log "@info OTP Code provided by the user is : " otpCreds.code
+     Log "@info Information provided by the user is : " otpCreds
      // Validate the OTP code provided by the user.
      otpValidationResult | otpValidationException = Call otpService validateOTPCode username otpCreds.code
      // Add log entry withvalidation result in log file.
