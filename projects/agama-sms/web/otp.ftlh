@@ -103,13 +103,11 @@
 	}
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
-	  console.log(resend)
 	  if(resend === "true"){
 		console.log("Start submitting")
 		return true
-	  }
-	  console.log("next")
-	  var userCode=""
+	  }else{
+		var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
 	  for (let i = 0; i < codeFields.length; i++) {
 		userCode = userCode.concat(codeFields[i].value)
@@ -121,6 +119,8 @@
 		document.getElementById("code").value = userCode
 	  }
 	  return true
+	  }
+	  
 	}
   </script>
 </html>
