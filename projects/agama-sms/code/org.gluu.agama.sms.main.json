@@ -294,7 +294,7 @@
 					"id": "Agama-log-Node-60c37617-154a-4906-ab2d-28c1afc65b3a",
 					"parentId": "Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41",
 					"type": "Agama-log-Node",
-					"displayName": "Log",
+					"displayName": "Log successfull attempt",
 					"hasComment": true,
 					"comment": "add entry in log file for successfull login attempt",
 					"whenCondition": "WhenTrue",
@@ -317,8 +317,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41",
 			"position": {
-				"x": 1368.447566324162,
-				"y": 316.36872131941766
+				"x": 1363.447566324162,
+				"y": 320.36872131941766
 			},
 			"parentId": "Agama-call-Node-94260a36-bbff-446c-a414-1e171ddae895",
 			"type": "when",
@@ -329,8 +329,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1368.447566324162,
-					"y": 316.36872131941766
+					"x": 1363.447566324162,
+					"y": 320.36872131941766
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-71ea52d5-e727-4319-a9b6-b71ea688ea41",
@@ -358,8 +358,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1368.447566324162,
-				"y": 316.36872131941766
+				"x": 1363.447566324162,
+				"y": 320.36872131941766
 			},
 			"dragging": false
 		},
@@ -440,7 +440,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 880,
@@ -788,7 +788,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Send OTP Code to user",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Generate and send OTP code to authenticated user",
 					"javaClassName": "",
 					"javaMethodName": "sendOTPCode",
 					"javaVariableName": "otpService",
@@ -804,7 +804,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1679.0002593213155,
@@ -1307,8 +1307,8 @@
 		}
 	],
 	"viewport": {
-		"x": -302,
-		"y": 15,
+		"x": -1414,
+		"y": -154,
 		"zoom": 1
 	}
 }
