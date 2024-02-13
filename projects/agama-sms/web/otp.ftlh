@@ -102,6 +102,10 @@
 	  form.onsubmit();
 	}
 	function handleFormValidation() {
+	  var resend = document.getElementById("resendCode").value
+	  if(resend === "true"){
+		return true
+	  }
 	  var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
 	  for (let i = 0; i < codeFields.length; i++) {
