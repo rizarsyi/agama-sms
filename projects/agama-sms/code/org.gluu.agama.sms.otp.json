@@ -3,6 +3,100 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
+			"position": {
+				"x": 2087,
+				"y": 650.6052563336497
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 2087,
+					"y": 650.6052563336497
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
+					"parentId": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09",
+					"type": "Agama-assignment-Node",
+					"displayName": "OPT resend error feedback",
+					"hasComment": true,
+					"comment": "Provide feedback about the otp resend error to user.",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "\"Error occurs while send new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "otpUiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 2087,
+				"y": 650.6052563336497
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
+			"position": {
+				"x": 1956,
+				"y": 935.6052563336497
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 1956,
+					"y": 935.6052563336497
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
+					"parentId": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
+					"type": "Agama-assignment-Node",
+					"displayName": "Feedback code sent successfully",
+					"hasComment": true,
+					"comment": "Provide feedback about the error message to user.",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "\"A new OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1956,
+				"y": 935.6052563336497
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
 			"position": {
 				"x": 1756,
@@ -33,7 +127,8 @@
 					"logMessage": "\"New OTP code send successfully!\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -75,7 +170,8 @@
 					"logMessage": "\"Error while resending OTP code to user\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -123,7 +219,8 @@
 				"handles": [
 					"Agama-when-Node-faabac3f-cacf-4eaf-a7f8-9c79fe7d268b.FAILURE",
 					"Agama-when-Node-faabac3f-cacf-4eaf-a7f8-9c79fe7d268b.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -172,7 +269,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpResend"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1258,11 +1356,45 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-faabac3f-cacf-4eaf-a7f8-9c79fe7d268b.SUCCESS"
+		},
+		{
+			"id": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a-Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc-52363525-de0e-4a66-9442-b9a3f05d2ba1",
+			"type": "straight",
+			"source": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
+			"target": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09-Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362-4203f7a5-865f-40f8-89b5-47f932d3a97a",
+			"type": "straight",
+			"source": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09",
+			"target": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -1193,
-		"y": -308,
+		"x": -1365,
+		"y": -395,
 		"zoom": 1
 	}
 }
