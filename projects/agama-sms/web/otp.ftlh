@@ -104,7 +104,7 @@
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
 	  if(resend === "true"){
-		console.log("Start submitting")
+		console.log("Requesting new OTP Code")
 		return true
 	  }
 	  else{
@@ -114,6 +114,7 @@
 		  userCode = userCode.concat(codeFields[i].value)
 		}
 		if (userCode === '' || userCode.length !== 6) {
+		  console.log("No code provided!")
 		  return false
 		}
 		else{
