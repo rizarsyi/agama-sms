@@ -1,15 +1,22 @@
+// Start execution of that OTP flow.
 Flow org.gluu.agama.sms.otp
      Basepath ""
      Inputs otpService username maskedPhone
+// Log flow imputs provided by the flow caller.
 Log "@info Information received from the caller: " username maskedPhone
-// Declare a variable for Ui feedback messages
+// Declare a variable for UI feedback messages.
 otpUiFeedback = {}
 otpUiFeedback.maskedPhone = maskedPhone
 otpUiFeedback.username = username
+// Try collecting the OTP code from the UI for maximum x(3) times.
 y = Repeat 3 times max
+     // Show UI to collect OTP code from user.
      otpCreds = RRF "otp.ftlh" otpUiFeedback
+     // Add log entry with collected code in log file.
      Log "@info OTP Code provided by the user is : " otpCreds.code
+     // Validate the OTP code provided by the user.
      otpValidationResult | otpValidationException = Call otpService validateOTPCode username otpCreds.code
+     // Add log entry withvalidation result in log file.
      Log "@info OTP validation result is:" otpValidationResult
      // If otp validation was successful
      When otpValidationResult is true
@@ -19,5 +26,5 @@ y = Repeat 3 times max
      otpUiFeedback.errorMessage = "The provided code is not valid"
 //  Maximum attempts reached. OTP validation failed!
 Log "@error Maximum attempts reached. OTP validation failed!"
-// OTP validation has failed
+// OTP validation has failed.
 Finish otpValidationResult
