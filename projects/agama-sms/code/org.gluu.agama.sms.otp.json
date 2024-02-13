@@ -164,7 +164,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1811.2633353251103,
@@ -386,13 +386,13 @@
 					"comment": "Add log entry with collected code in log file.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code",
+					"logMessage": "\"Information provided by the user is : \" otpCreds",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 925,
@@ -404,8 +404,8 @@
 			"height": 124,
 			"id": "Agama-rrf-Node-3aeb6cd1-c67d-43b9-81c1-44348e2fc0a8",
 			"position": {
-				"x": 725,
-				"y": 260
+				"x": 734,
+				"y": 258
 			},
 			"type": "rrf",
 			"data": {
@@ -415,8 +415,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 725,
-					"y": 260
+					"x": 734,
+					"y": 258
 				},
 				"agamaData": {
 					"id": "Agama-rrf-Node-3aeb6cd1-c67d-43b9-81c1-44348e2fc0a8",
@@ -440,8 +440,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 725,
-				"y": 260
+				"x": 734,
+				"y": 258
 			}
 		},
 		{
@@ -873,8 +873,8 @@
 		}
 	],
 	"viewport": {
-		"x": -862,
-		"y": -65,
+		"x": -457,
+		"y": 25,
 		"zoom": 1
 	}
 }
