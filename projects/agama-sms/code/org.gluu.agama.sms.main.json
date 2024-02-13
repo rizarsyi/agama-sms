@@ -118,7 +118,7 @@
 					"type": "Agama-when-Node",
 					"conditions": [
 						{
-							"variable": "otpFeedBack.status",
+							"variable": "otpFeedBack.success",
 							"operator": "is",
 							"dataValue": "true",
 							"combinator": "none"
@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2655.0002593213158,
 				"y": 603.5792339867169
@@ -854,7 +854,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2267.0002593213158,
@@ -900,7 +900,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1306,8 +1307,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1762,
-		"y": -331,
+		"x": -2118,
+		"y": -314,
 		"zoom": 1
 	}
 }
