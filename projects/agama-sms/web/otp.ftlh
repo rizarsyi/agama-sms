@@ -52,6 +52,7 @@
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <input type="text" id="code" name="code" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
+				  <input type="text" id="resendCode" name="resendCode" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
 				  <div class="flex flex-row justify-center text-center px-2">
 					<button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
 				  </div>
@@ -60,7 +61,7 @@
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
 					</p>
-					<a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800">Resend</a>
+					<a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800" onclick="handleResend();">Resend</a>
 				  </div>
 				</div>
 			  </form>
@@ -78,6 +79,11 @@
 	  var form = document.querySelector("form");
 	  form.onsubmit = handleFormValidation;
 	};
+	function handleResend() {
+	  document.getElementById("resendCode").value = true
+	  var form = document.querySelector("form");
+	  form.onsubmit();
+	}
 	function handleFormValidation() {
 	  var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
