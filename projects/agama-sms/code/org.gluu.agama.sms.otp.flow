@@ -17,6 +17,11 @@ y = Repeat 3 times max
      When otpCreds.resend is true
           // Log new code request
           Log "@info User has requested a new code"
+          // Resend OTP code to user
+          otpResend = Call otpService sendOTPCode username
+          When otpResend is true
+               Log "@info New OTP code send successfully!"
+          Log "@error Error while resending OTP code to user"
      // Validate the OTP code provided by the user.
      otpValidationResult | otpValidationException = Call otpService validateOTPCode username otpCreds.code
      // Add log entry withvalidation result in log file.
