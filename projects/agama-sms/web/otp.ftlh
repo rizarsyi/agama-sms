@@ -89,7 +89,7 @@
 		}
 		var codeInputs = document.querySelectorAll('input[type="number"]')
 		for (let i = 0; i < codeInputs.length; i++) {
-		  codeInputs[i].value = pastedText.charAt(0)
+		  codeInputs[i].value = pastedText.charAt(i)
 		}
 		return false;
 	  };
