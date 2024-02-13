@@ -27,7 +27,7 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "OTP validation has failed",
+					"comment": "OTP validation has failed.",
 					"flowfilename": "",
 					"returnVariable": "otpValidationResult",
 					"finishMode": "withVariable",
@@ -210,7 +210,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1674.2633353251103,
@@ -293,7 +293,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log validation result",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Add log entry withvalidation result in log file.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"logMessage": "\"OTP validation result is:\" otpValidationResult",
@@ -302,7 +302,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1325,
@@ -334,7 +334,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Validate OTP Code",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Validate the OTP code provided by the user.",
 					"javaClassName": "",
 					"javaMethodName": "validateOTPCode",
 					"javaVariableName": "otpService",
@@ -383,7 +383,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log user provided code",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Add log entry with collected code in log file.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code",
@@ -424,14 +424,16 @@
 					"type": "Agama-rrf-Node",
 					"displayName": "Collect User OTP Code",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Show UI to collect OTP code from user.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "otp.ftlh",
 					"asssignedVariableName": "otpCreds",
-					"arguments": "otpUiFeedback"
+					"arguments": [
+						"otpUiFeedback"
+					]
 				},
 				"skake": false
 			},
@@ -472,9 +474,10 @@
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "3",
 					"maxIterationVariableName": "y",
-					"displayName": "OTP Validation Loop",
+					"displayName": "OTP validation loop",
 					"hasComment": true,
-					"hasNoRepeat": true
+					"hasNoRepeat": true,
+					"comment": "Try collecting the OTP code from the UI for maximum x(3) times."
 				},
 				"skake": false
 			},
@@ -510,7 +513,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Declare feedback Variable",
 					"hasComment": true,
-					"comment": "Declare a variable for Ui feedback messages",
+					"comment": "Declare a variable for UI feedback messages.",
 					"whenCondition": "",
 					"inRepeatBlock": false,
 					"assignments": [
@@ -566,7 +569,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log flow imputs",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Log flow imputs provided by the flow caller.",
 					"whenCondition": "",
 					"inRepeatBlock": false,
 					"logMessage": "\"Information received from the caller: \" username maskedPhone",
@@ -601,7 +604,7 @@
 					"type": "Agama-start-Flow",
 					"displayName": "SMS OTP Flow",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Start execution of that OTP flow.",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{}",
@@ -870,8 +873,8 @@
 		}
 	],
 	"viewport": {
-		"x": 17,
-		"y": 86,
+		"x": -1056,
+		"y": -39,
 		"zoom": 1
 	}
 }
