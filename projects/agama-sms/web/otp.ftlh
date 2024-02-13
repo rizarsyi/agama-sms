@@ -61,7 +61,7 @@
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
 					</p>
-					<a href="#" class="text-blue focus:ring-4 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Resend</a>
+					<a href="#" class="text-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Resend</a>
 				  </div>
 				</div>
 			  </form>
