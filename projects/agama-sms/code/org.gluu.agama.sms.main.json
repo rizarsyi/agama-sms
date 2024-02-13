@@ -136,7 +136,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2655.0002593213158,
 				"y": 603.5792339867169
@@ -429,7 +429,7 @@
 					"id": "Agama-log-Node-fdc07782-5d4a-4ce8-a495-7269f0649858",
 					"parentId": "Agama-repeat-Node-d9d5641a-253f-40a5-abe3-0aa85f3a3b4f",
 					"type": "Agama-log-Node",
-					"displayName": "Log",
+					"displayName": "Log maximun attempt",
 					"hasComment": true,
 					"comment": "Maximum attempts reached. Password validation failed!",
 					"whenCondition": "",
@@ -440,7 +440,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 880,
@@ -652,7 +652,7 @@
 					"id": "Agama-call-Node-0d8625d9-a728-45a8-8789-236245f95748",
 					"parentId": "Agama-assignment-Node-98fb23d8-55af-4305-a03b-90dc8dc8bc83",
 					"type": "Agama-call-Node",
-					"displayName": "Init",
+					"displayName": "Init OTP Service",
 					"hasComment": true,
 					"comment": "// Get an instance of OTPService Class",
 					"javaClassName": "org.gluu.agama.sms.OTPService",
@@ -1307,8 +1307,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2118,
-		"y": -314,
+		"x": -302,
+		"y": 15,
 		"zoom": 1
 	}
 }
