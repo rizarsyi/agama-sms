@@ -24,7 +24,7 @@
 				<div class="flex flex-col mt-4">
 				  [#if username??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
-					<span class="font-medium">Info!</span> Welcome back ${username}. 
+					<span class="font-medium"></span>Welcome back ${username}!. 
 					[#if maskedPhone??]
 					<span class="font-medium">An OTP code has been send to you on your mobile phone.</span> 
 					[/#if]
@@ -60,7 +60,9 @@
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
 					<p>Didn't recieve code?
 					</p>
-					<a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600">Resend</a>
+					<button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
+					<a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center text-blue-600"></a>
+					<a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800">Resend</a>
 				  </div>
 				</div>
 			  </form>
