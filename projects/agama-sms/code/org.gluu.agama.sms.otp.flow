@@ -14,7 +14,7 @@ y = Repeat 3 times max
      otpCreds = RRF "otp.ftlh" otpUiFeedback
      // Add log entry with collected code in log file.
      Log "@info Information provided by the user is : " otpCreds
-     When otpCreds.resendCode is true
+     When otpCreds.resendCode is "true"
           // Log new code request
           Log "@info User has requested a new code"
           // Resend OTP code to user
