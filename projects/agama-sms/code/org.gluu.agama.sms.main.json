@@ -804,7 +804,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1679.0002593213155,
@@ -933,9 +933,9 @@
 					"id": "Agama-log-Node-0b87511a-8528-47cf-bd66-97f892c01d8a",
 					"parentId": "Agama-assignment-Node-e7de686f-4edf-4358-ba25-9e7db42c2fab",
 					"type": "Agama-log-Node",
-					"displayName": "Code sent",
+					"displayName": "OTP Code sent",
 					"hasComment": true,
-					"comment": "",
+					"comment": "The OTP Code has been send to user",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"logMessage": "\"OTP generated and send to: \" maskedPhone",
@@ -947,7 +947,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2078.0002593213158,
