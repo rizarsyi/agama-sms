@@ -112,7 +112,6 @@
 		userCode = userCode.concat(codeFields[i].value)
 	  }
 	  if (userCode === '' || userCode.length !== 6) {
-		alert("Please provide the code.")
 		return false
 	  }
 	  else{
