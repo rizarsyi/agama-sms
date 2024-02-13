@@ -33,12 +33,13 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "\"Error occurs while send new code to you. Please contact site administrator.\"",
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
 							"assignedVariableName": "otpUiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
@@ -85,7 +86,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
