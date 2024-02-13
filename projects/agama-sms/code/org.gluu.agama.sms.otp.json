@@ -109,7 +109,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Error feedback",
 					"hasComment": true,
-					"comment": "Provide feedback about the error message to user",
+					"comment": "Provide feedback about the error message to user.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"assignments": [
@@ -155,16 +155,16 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log Invalid attempt",
 					"hasComment": true,
-					"comment": "",
+					"comment": "The maximum number of attempt has been reached.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": true,
-					"logMessage": "\"Invalid code provided. Number of attempt: \" idx[0]",
+					"logMessage": "\"Invalid code provided. Number of attempt(s): \" idx[0]",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1811.2633353251103,
@@ -201,7 +201,7 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "OTP flow completed successfully.",
 					"flowfilename": "",
 					"returnVariable": "otpValidationResult",
 					"finishMode": "withVariable",
@@ -302,7 +302,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1325,
@@ -873,8 +873,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1056,
-		"y": -39,
+		"x": -862,
+		"y": -65,
 		"zoom": 1
 	}
 }
