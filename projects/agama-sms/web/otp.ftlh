@@ -87,7 +87,10 @@
 		else if (e.clipboardData && e.clipboardData.getData) {
 		  pastedText = e.clipboardData.getData('text/plain');
 		}
-		alert(pastedText);
+	  var codeInputs = document.querySelectorAll('input[type="number"]')
+	  for (let i = 0; i < codeInputs.length; i++) {
+		codeInputs[i].value = pastedText[i]
+	  }
 		return false;
 	  };
 	};
