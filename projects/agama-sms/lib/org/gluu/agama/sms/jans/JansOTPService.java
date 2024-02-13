@@ -62,15 +62,6 @@ public class JansOTPService extends OTPService {
                 return true;
             }
             return false;
-            /*
-           String storedCode= getUser(USERNAME,username).getAttribute(OTP_SMS_CODE);
-           if(code.equalsIgnoreCase(storedCode)){
-               logger.info("OTP Code {} provided by {} is valid", code, username);
-               return true;
-           }
-            return false;
-
-             */
         }catch (Exception exception){
             logger.info("OTP Code {} provided by {} is not valid. Error: {} ", code, username, exception);
             return false;
@@ -102,17 +93,6 @@ public class JansOTPService extends OTPService {
 
     private boolean associateGeneratedCodeToUser(String username, String code){
         try{
-            /*
-            User user = authenticationService.getAuthenticatedUser();
-            if(user != null){
-                user.setAttribute(OTP_SMS_CODE, code, true);
-                userService.updateUser(user);
-                return true;
-            }else{
-                logger.warn("No user with "+USERNAME+" {} found in the database .", username);
-                return false;
-            }
-             */
             userCodes.put(username,code);
             return  true;
         }catch (Exception exception){
