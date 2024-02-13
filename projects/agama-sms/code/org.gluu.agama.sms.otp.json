@@ -36,7 +36,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1080,
@@ -296,13 +296,13 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"OTP validation result is:\" otpValidationResult otpValidationException",
+					"logMessage": "\"OTP validation result is:\" otpValidationResult",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1325,
@@ -870,8 +870,8 @@
 		}
 	],
 	"viewport": {
-		"x": -717,
-		"y": -57,
+		"x": -648,
+		"y": -78,
 		"zoom": 1
 	}
 }
