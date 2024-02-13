@@ -534,7 +534,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -569,13 +569,13 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": false,
-					"logMessage": "\"Information received by the called:\" username maskedPhone",
+					"logMessage": "\"Information received from the caller: \" username maskedPhone",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 230,
@@ -870,8 +870,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": 201,
+		"y": 84,
 		"zoom": 1
 	}
 }
