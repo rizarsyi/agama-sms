@@ -99,6 +99,7 @@
 	function handleResend() {
 	  document.getElementById("resendCode").value = "true"
 	  var form = document.querySelector("form");
+	  form.submit();
 	}
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
