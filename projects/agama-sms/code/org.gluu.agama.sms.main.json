@@ -168,7 +168,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log SMS OTP result",
 					"hasComment": true,
-					"comment": "OTP Code validation is completed",
+					"comment": "OTP Code validation is completed.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"logMessage": "\"OTP Code validation completed with status: \" otpFeedBack",
@@ -296,10 +296,10 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log successfull attempt",
 					"hasComment": true,
-					"comment": "add entry in log file for successfull login attempt",
+					"comment": "add entry in log file for successfull login attempt.",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": true,
-					"logMessage": "\"Valid credentials provided for user \" credentials.username",
+					"logMessage": "\"Valid credentials provided for user: \" credentials.username",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -562,7 +562,7 @@
 					"type": "Agama-rrf-Node",
 					"displayName": "Collect credentials",
 					"hasComment": true,
-					"comment": "Retrieve user credentials from UI",
+					"comment": "Retrieve user credentials from UI.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"assignments": [],
@@ -613,7 +613,7 @@
 					"maxIteration": "3",
 					"maxIterationVariableName": "count",
 					"displayName": "Login Loop",
-					"comment": "Iterate x times maximum",
+					"comment": "Iterate x times maximum.",
 					"hasComment": true,
 					"hasNoRepeat": true,
 					"hasSuccess": "",
@@ -635,7 +635,7 @@
 			"id": "Agama-call-Node-0d8625d9-a728-45a8-8789-236245f95748",
 			"position": {
 				"x": 430,
-				"y": 30
+				"y": 28.643395672552344
 			},
 			"type": "call",
 			"data": {
@@ -646,7 +646,7 @@
 				"inRepeatBlock": false,
 				"position": {
 					"x": 430,
-					"y": 30
+					"y": 28.643395672552344
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-0d8625d9-a728-45a8-8789-236245f95748",
@@ -654,7 +654,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Init OTP Service",
 					"hasComment": true,
-					"comment": "// Get an instance of OTPService Class",
+					"comment": "Get an instance of OTPService Class.\n",
 					"javaClassName": "org.gluu.agama.sms.OTPService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
@@ -672,7 +672,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
-				"y": 30
+				"y": 28.643395672552344
 			}
 		},
 		{
@@ -700,7 +700,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Create variables",
 					"hasComment": true,
-					"comment": "Create variable to receive validation result",
+					"comment": "Create variable to receive validation result.",
 					"whenCondition": "",
 					"inRepeatBlock": false,
 					"assignments": [
@@ -740,7 +740,7 @@
 					"type": "Agama-start-Flow",
 					"displayName": "SMS main flow",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Start the excecution of the main flow",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{}",
@@ -788,7 +788,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Send OTP Code to user",
 					"hasComment": true,
-					"comment": "Generate and send OTP code to authenticated user",
+					"comment": "Generate and send OTP code to authenticated user.",
 					"javaClassName": "",
 					"javaMethodName": "sendOTPCode",
 					"javaVariableName": "otpService",
@@ -836,7 +836,7 @@
 					"type": "Agama-trigger-Node",
 					"displayName": "Launch OTP UI",
 					"hasComment": true,
-					"comment": "Launch the UI to collect OTP Code from user",
+					"comment": "Launch the UI to collect OTP Code from user.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
@@ -889,7 +889,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Define username",
 					"hasComment": true,
-					"comment": "Assign username variable",
+					"comment": "Assign username variable.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"assignments": [
@@ -935,7 +935,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "OTP Code sent",
 					"hasComment": true,
-					"comment": "The OTP Code has been send to user",
+					"comment": "The OTP Code has been send to user.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"logMessage": "\"OTP generated and send to: \" maskedPhone",
@@ -1307,8 +1307,8 @@
 		}
 	],
 	"viewport": {
-		"x": 327,
-		"y": 162,
-		"zoom": 1
+		"x": 163.36138320063833,
+		"y": 157.94319725416597,
+		"zoom": 0.7371346086455505
 	}
 }
