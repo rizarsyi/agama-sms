@@ -16,6 +16,7 @@ count = Repeat 3 times max
      When validationResult.status is true
           // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided for user " credentials.username
+          // Generate and send OTP code to authenticated user
           maskedPhone = Call otpService sendOTPCode credentials.username
           // Assign username variable
           username = credentials.username
@@ -24,11 +25,11 @@ count = Repeat 3 times max
           Log "@info SMS OTP check result: " otpFeedBack
           // Check if OTP validation vas okay
           When otpFeedBack.success is true
-               it_ergyt = {success:true, data: { userId: credentials.username}}
-               Finish it_ergyt
+               it_pzscb = {success:true, data: { userId: credentials.username}}
+               Finish it_pzscb
           // Closig the entire flow with error.
-          it_cjlnd = {success:false, error: "The flow has been completed with error"}
-          Finish it_cjlnd
+          it_jxnvh = {success:false, error: "The flow has been completed with error"}
+          Finish it_jxnvh
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -36,5 +37,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_akipw = {success:false, error: "Password validation failed!"}
-Finish it_akipw
+it_zuvgi = {success:false, error: "Password validation failed!"}
+Finish it_zuvgi
