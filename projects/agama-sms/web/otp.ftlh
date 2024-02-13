@@ -98,16 +98,17 @@
 	};
 	function handleResend() {
 	  document.getElementById("resendCode").value = "true"
-	  alert(document.getElementById("resendCode").value)
 	  var form = document.querySelector("form");
 	  form.onsubmit();
 	}
 	function handleFormValidation() {
 	  var resend = document.getElementById("resendCode").value
-	  alert(resend)
+	  console.log(resend)
 	  if(resend === "true"){
+		console.log("Start submitting")
 		return true
 	  }
+	  console.log("next")
 	  var userCode=""
 	  var codeFields = document.querySelectorAll('input[type="number"]')
 	  for (let i = 0; i < codeFields.length; i++) {
