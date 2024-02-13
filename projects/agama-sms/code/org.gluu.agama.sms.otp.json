@@ -32,11 +32,11 @@
 					"returnVariable": "otpValidationResult",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "OTP validation has fail"
+					"displayName": "OTP validation has failed!"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1080,
@@ -386,7 +386,7 @@
 					"comment": "",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code idx[0]",
+					"logMessage": "\"OTP Code provided by the user is : \" otpCreds.code",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -471,8 +471,8 @@
 					"type": "Agama-repeat-Node",
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "3",
-					"maxIterationVariableName": "otpCount",
-					"displayName": "OPT Validation Loop",
+					"maxIterationVariableName": "y",
+					"displayName": "OTP Validation Loop",
 					"hasComment": true,
 					"hasNoRepeat": true
 				},
@@ -575,7 +575,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 230,
@@ -870,8 +870,8 @@
 		}
 	],
 	"viewport": {
-		"x": 201,
-		"y": 84,
+		"x": -717,
+		"y": -57,
 		"zoom": 1
 	}
 }
