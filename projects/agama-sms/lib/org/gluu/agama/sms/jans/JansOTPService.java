@@ -22,11 +22,10 @@ public class JansOTPService extends OTPService {
     private static AuthenticationService authenticationService = CdiUtil.bean(AuthenticationService.class);
     private HashMap<String, String> userCodes = new HashMap<>();
     private static UserService userService = CdiUtil.bean(UserService.class);
-    private static final String OTP_SMS_CODE = "SMSCode";
     private static final String USERNAME = "uid";
     public static final String ACCOUNT_SID = "AC3dcsssssssssssssssssssssss";
     public static final String AUTH_TOKEN = "820sssssssssaaaaaaaaaaaaaaaaaa";
-    public static final int OTP_CODE_LENGTH = System.getenv("OTP_CODE_LENGTH")!=null? Integer.parseInt(System.getenv("OTP_CODE_LENGTH")) :6;
+    public static final int OTP_CODE_LENGTH = 6;
     @Override
     public boolean validateCreds(String username, String password) {
         logger.info("Validating user credentials {}.", username);
@@ -38,7 +37,7 @@ public class JansOTPService extends OTPService {
     public String sendOTPCode(String username) {
         try{
             logger.info("Sending OTP Code via SMS to {}.", username);
-            String phone = getUserPhoneNumber();
+            String phone = getUserPhoneNumber(username);
             String maskedPone = maskPhone(phone);
             String otpCode = generateOTpCode(OTP_CODE_LENGTH);
             logger.info("Generated OTP code is {}.", otpCode);
@@ -78,8 +77,8 @@ public class JansOTPService extends OTPService {
         return new String(otp);
     }
 
-    private String getUserPhoneNumber(){
-        User currentUser = authenticationService.getAuthenticatedUser();
+    private String getUserPhoneNumber(String username){
+        User currentUser = getUser(USERNAME,username);
         String phoneNumber = currentUser.getAttribute("mobile");
         if(phoneNumber == null){
             phoneNumber = currentUser.getAttribute("telephoneNumber");
