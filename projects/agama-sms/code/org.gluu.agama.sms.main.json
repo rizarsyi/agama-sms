@@ -670,7 +670,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -745,7 +745,7 @@
 					"comment": "Start the excecution of the main flow",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{}",
+					"configParams": "{\n  \"ACCOUNT_SID\": \"sample_accountid\",\n  \"AUTH_TOKEN\": \"sampletoken\",\n  \"FROM_NUMBER\": \"+237696534361\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
@@ -758,7 +758,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -1309,8 +1309,8 @@
 		}
 	],
 	"viewport": {
-		"x": 37,
-		"y": 135,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
