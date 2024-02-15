@@ -1,10 +1,11 @@
 // Start the excecution of the main flow
 Flow org.gluu.agama.sms.main
      Basepath ""
+     Configs conf
 // Create variable to receive validation result.
 validationResult = {}
 // Get an instance of OTPService Class. 
-otpService = Call org.gluu.agama.sms.OTPService#getInstance 
+otpService = Call org.gluu.agama.sms.OTPService#getInstance conf
 // Iterate x times maximum.
 count = Repeat 3 times max
      // Retrieve user credentials from UI.
@@ -30,11 +31,11 @@ count = Repeat 3 times max
           // Check if OTP validation vas okay
           When otpFeedBack.success is true
                // The main flow has completed successfully.
-               it_hzity = {success:true, data: { userId: credentials.username}}
-               Finish it_hzity
+               it_uoilz = {success:true, data: { userId: credentials.username}}
+               Finish it_uoilz
           // Closing the main flow with error.
-          it_lxhsy = {success:false, error: "The flow has been completed with error."}
-          Finish it_lxhsy
+          it_oeldq = {success:false, error: "The flow has been completed with error."}
+          Finish it_oeldq
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -42,5 +43,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_tyskw = {success:false, error: "Password validation failed!"}
-Finish it_tyskw
+it_lvgdc = {success:false, error: "Password validation failed!"}
+Finish it_lvgdc
