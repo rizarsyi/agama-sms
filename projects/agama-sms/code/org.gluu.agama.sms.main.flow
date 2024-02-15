@@ -31,11 +31,11 @@ count = Repeat 3 times max
           // Check if OTP validation vas okay
           When otpFeedBack.success is true
                // The main flow has completed successfully.
-               it_uoilz = {success:true, data: { userId: credentials.username}}
-               Finish it_uoilz
+               it_yljiz = {success:true, data: { userId: credentials.username}}
+               Finish it_yljiz
           // Closing the main flow with error.
-          it_oeldq = {success:false, error: "The flow has been completed with error."}
-          Finish it_oeldq
+          it_ozlzn = {success:false, error: "The flow has been completed with error."}
+          Finish it_ozlzn
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -43,5 +43,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_lvgdc = {success:false, error: "Password validation failed!"}
-Finish it_lvgdc
+it_foaxl = {success:false, error: "Password validation failed!"}
+Finish it_foaxl
