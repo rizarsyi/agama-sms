@@ -21,13 +21,14 @@ public class JansOTPService extends OTPService {
     private static final Logger logger = LoggerFactory.getLogger(FlowService.class);
     private static AuthenticationService authenticationService = CdiUtil.bean(AuthenticationService.class);
     private HashMap<String, String> userCodes = new HashMap<>();
+    private HashMap<String, String> flowConfig;
     private static UserService userService = CdiUtil.bean(UserService.class);
     private static final String USERNAME = "uid";
-    public static final String ACCOUNT_SID = "AC3dcsssssssssssssssssssssss";
-    public static final String AUTH_TOKEN = "820sssssssssaaaaaaaaaaaaaaaaaa";
+
     public static final int OTP_CODE_LENGTH = 6;
 
     public  JansOTPService(HashMap config){
+        flowConfig=config;
         logger.info("Flow config provided is  {}.", config);
     }
 
@@ -119,10 +120,10 @@ public class JansOTPService extends OTPService {
 
     private boolean sendTwilioSms(String userName, String phone, String message){
         try{
-            PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber("+237696534361") ;
+            PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber(flowConfig.get("FROM_NUMBER")) ;
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
-            logger.info("Twilio settings: {} {} {}.", ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER);
-            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+            logger.info("Flow config is {}.", flowConfig);
+            Twilio.init(flowConfig.get("ACCOUNT_SID"), flowConfig.get("AUTH_TOKEN"));
             Message.creator(TO_NUMBER, FROM_NUMBER, message).create();
             logger.info("OTP Code has been successfully send to {} on phone number {} .", userName, phone);
             return true;
