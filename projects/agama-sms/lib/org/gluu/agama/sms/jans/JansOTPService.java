@@ -26,6 +26,10 @@ public class JansOTPService extends OTPService {
     public static final String ACCOUNT_SID = "AC3dcsssssssssssssssssssssss";
     public static final String AUTH_TOKEN = "820sssssssssaaaaaaaaaaaaaaaaaa";
     public static final int OTP_CODE_LENGTH = 6;
+
+    public  JansOTPService(HashMap config){
+        logger.info("Flow config provided is  {}.", config);
+    }
     @Override
     public boolean validateCreds(String username, String password) {
         logger.info("Validating user credentials {}.", username);
