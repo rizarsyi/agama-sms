@@ -30,6 +30,9 @@ public class JansOTPService extends OTPService {
     public  JansOTPService(HashMap config){
         logger.info("Flow config provided is  {}.", config);
     }
+
+    public  JansOTPService(){
+    }
     @Override
     public boolean validateCreds(String username, String password) {
         logger.info("Validating user credentials {}.", username);
