@@ -15,7 +15,11 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.sms.main": {},
+            "org.gluu.agama.sms.main": {
+                "ACCOUNT_SID": "sample_accountid",
+                "AUTH_TOKEN": "sampletoken",
+                "FROM_NUMBER": "+237696534361"
+            },
             "": {},
             "org.gluu.agama.sms.otp": {}
         },
