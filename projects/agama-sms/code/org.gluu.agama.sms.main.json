@@ -662,13 +662,15 @@
 					"callType": "Call static method",
 					"whenCondition": "",
 					"inRepeatBlock": false,
-					"arguments": [],
+					"arguments": [
+						"conf"
+					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpService"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -747,7 +749,7 @@
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "",
+					"configs": "conf",
 					"flowname": "org.gluu.agama.sms.main"
 				},
 				"skake": false
@@ -756,7 +758,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -1307,8 +1309,8 @@
 		}
 	],
 	"viewport": {
-		"x": 163.36138320063833,
-		"y": 157.94319725416597,
-		"zoom": 0.7371346086455505
+		"x": 37,
+		"y": 135,
+		"zoom": 1
 	}
 }
