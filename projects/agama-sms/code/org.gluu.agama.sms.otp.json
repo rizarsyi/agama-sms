@@ -224,7 +224,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1645.5505662284743,
@@ -806,13 +806,18 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "username",
 							"assignedVariableName": "otpUiFeedback.username"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "An OTP code has been send to you on your mobile phone.",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -1395,8 +1400,8 @@
 		}
 	],
 	"viewport": {
-		"x": -27.61258628250289,
-		"y": 164.03546536066642,
-		"zoom": 0.5
+		"x": -11,
+		"y": 146,
+		"zoom": 1
 	}
 }
