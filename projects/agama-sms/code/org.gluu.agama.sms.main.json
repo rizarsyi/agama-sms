@@ -745,7 +745,7 @@
 					"comment": "Start the excecution of the main flow",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"ACCOUNT_SID\": \"sample_accountid\",\n  \"AUTH_TOKEN\": \"sampletoken\",\n  \"FROM_NUMBER\": \"+237696534361\"\n}",
+					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
@@ -1309,8 +1309,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": 37,
+		"y": 150,
 		"zoom": 1
 	}
 }
