@@ -52,7 +52,7 @@
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <input type="text" id="code" name="code" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
-				  <input type="text" id="resendCode" name="resendCode" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
+				  <input type="text" id="hasRequestedNewCode" name="hasRequestedNewCode" class="m-2 border hidden h-10 w-10 text-center form-control rounded">
 				  <div class="flex flex-row justify-center text-center px-2">
 					<button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"> Submit Code</button>
 				  </div>
@@ -97,13 +97,13 @@
 	  };
 	};
 	function handleResend() {
-	  document.getElementById("resendCode").value = "true"
+	  document.getElementById("hasRequestedNewCode").value = "yes"
 	  var form = document.querySelector("form");
 	  form.submit();
 	}
 	function handleFormValidation() {
-	  var resend = document.getElementById("resendCode").value
-	  if(resend === "true"){
+	  var resend = document.getElementById("hasRequestedNewCode").value
+	  if(resend === "yes"){
 		console.log("Requesting new OTP Code")
 		return true
 	  }
