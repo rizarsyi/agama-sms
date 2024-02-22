@@ -122,7 +122,7 @@ public class JansOTPService extends OTPService {
         try{
             PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber(flowConfig.get("FROM_NUMBER")) ;
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
-            logger.info("Flow config is {}.", flowConfig);
+            logger.info("Flow config is {} {} {}.", flowConfig.get("FROM_NUMBER"), flowConfig.get("ACCOUNT_SID"), flowConfig.get("AUTH_TOKEN"));
             Twilio.init(flowConfig.get("ACCOUNT_SID"), flowConfig.get("AUTH_TOKEN"));
             Message.creator(TO_NUMBER, FROM_NUMBER, message).create();
             logger.info("OTP Code has been successfully send to {} on phone number {} .", userName, phone);
