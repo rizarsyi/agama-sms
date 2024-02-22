@@ -5,8 +5,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
 			"position": {
-				"x": 2087,
-				"y": 650.6052563336497
+				"x": 2086.027345052588,
+				"y": 646.7146365440005
 			},
 			"type": "assignment",
 			"data": {
@@ -17,8 +17,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2087,
-					"y": 650.6052563336497
+					"x": 2086.027345052588,
+					"y": 646.7146365440005
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-397e36a6-be90-401a-af57-424c9f933362",
@@ -32,8 +32,8 @@
 					"inIterateBlock": false,
 					"assignments": [
 						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"variableTypeCheck": true,
+							"assignmentExpression": "Error occurs while sending new code to you. Please contact site administrator.",
 							"assignedVariableName": "otpUiFeedback.errorMessage"
 						}
 					],
@@ -44,8 +44,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2087,
-				"y": 650.6052563336497
+				"x": 2086.027345052588,
+				"y": 646.7146365440005
 			}
 		},
 		{
@@ -53,8 +53,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
 			"position": {
-				"x": 1956,
-				"y": 935.6052563336497
+				"x": 2004.6327473706147,
+				"y": 927.8240167543514
 			},
 			"type": "assignment",
 			"data": {
@@ -65,8 +65,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1956,
-					"y": 935.6052563336497
+					"x": 2004.6327473706147,
+					"y": 927.8240167543514
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-5865f933-c4f9-43ec-973e-e068394b18bc",
@@ -80,8 +80,8 @@
 					"inIterateBlock": false,
 					"assignments": [
 						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "\"A new OTP code has been send to you on your mobile phone.\"",
+							"variableTypeCheck": true,
+							"assignmentExpression": "A new OTP code has been send to you on your mobile phone.",
 							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
@@ -92,8 +92,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1956,
-				"y": 935.6052563336497
+				"x": 2004.6327473706147,
+				"y": 927.8240167543514
 			}
 		},
 		{
@@ -101,8 +101,8 @@
 			"height": 124,
 			"id": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
 			"position": {
-				"x": 1755,
-				"y": 935.6052563336497
+				"x": 1788.0702682120177,
+				"y": 931.7146365440004
 			},
 			"type": "log",
 			"data": {
@@ -113,8 +113,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1755,
-					"y": 935.6052563336497
+					"x": 1788.0702682120177,
+					"y": 931.7146365440004
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-b7fde158-2498-4a76-bae1-835f007dba4a",
@@ -132,11 +132,11 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1755,
-				"y": 935.6052563336497
+				"x": 1788.0702682120177,
+				"y": 931.7146365440004
 			}
 		},
 		{
@@ -145,7 +145,7 @@
 			"id": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09",
 			"position": {
 				"x": 1887,
-				"y": 650.6052563336497
+				"y": 647.6872914914128
 			},
 			"type": "log",
 			"data": {
@@ -157,7 +157,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 1887,
-					"y": 650.6052563336497
+					"y": 647.6872914914128
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-7a12676c-be6f-42a3-afb5-4364c32dcc09",
@@ -169,7 +169,7 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"Error while resending OTP code to user\" resendHasSucceed",
+					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -178,7 +178,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 1887,
-				"y": 650.6052563336497
+				"y": 647.6872914914128
 			},
 			"dragging": false
 		},
@@ -187,8 +187,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-faabac3f-cacf-4eaf-a7f8-9c79fe7d268b",
 			"position": {
-				"x": 1641.6052563336498,
-				"y": 705.6052563336497
+				"x": 1645.5505662284743,
+				"y": 707.6599464388252
 			},
 			"parentId": "Agama-call-Node-fb5423dc-77df-4f8f-82b4-23fd0cbb99fb",
 			"type": "when",
@@ -200,8 +200,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1641.6052563336498,
-					"y": 705.6052563336497
+					"x": 1645.5505662284743,
+					"y": 707.6599464388252
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-faabac3f-cacf-4eaf-a7f8-9c79fe7d268b",
@@ -224,11 +224,11 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1641.6052563336498,
-				"y": 705.6052563336497
+				"x": 1645.5505662284743,
+				"y": 707.6599464388252
 			}
 		},
 		{
@@ -1395,8 +1395,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1057.1833804635362,
-		"y": -257.6110149486891,
-		"zoom": 1.0281138266560663
+		"x": -27.61258628250289,
+		"y": 164.03546536066642,
+		"zoom": 0.5
 	}
 }
