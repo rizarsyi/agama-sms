@@ -41,7 +41,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2086.027345052588,
@@ -211,7 +211,7 @@
 						{
 							"variable": "resendHasSucceed",
 							"operator": "is",
-							"dataValue": "true",
+							"dataValue": "null",
 							"combinator": "none"
 						}
 					],
@@ -224,7 +224,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1645.5505662284743,
@@ -1400,8 +1400,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1382,
-		"y": -377,
+		"x": -1206,
+		"y": -402,
 		"zoom": 1
 	}
 }
