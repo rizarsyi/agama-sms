@@ -210,7 +210,7 @@
 					"conditions": [
 						{
 							"variable": "resendHasSucceed",
-							"operator": "is",
+							"operator": "is not",
 							"dataValue": "null",
 							"combinator": "none"
 						}
