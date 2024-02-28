@@ -15,7 +15,19 @@ y = Repeat 3 times max
      otpCreds = RRF "otp.ftlh" otpUiFeedback
      // Add log entry with collected code in log file.
      Log "@info Information provided by the user is : " otpCreds
-     When otpCreds.hasRequestedNewCode is "yes"
+     When otpCreds.hasRequestedNewCode is not "yes"
+          // Validate the OTP code provided by the user.
+          otpValidationResult = Call otpService validateOTPCode username otpCreds.code
+          // Add log entry withvalidation result in log file.
+          Log "@info OTP validation result is:" otpValidationResult
+          // If otp validation was successful
+          When otpValidationResult is true
+               // OTP flow completed successfully.
+               Finish otpValidationResult
+          // The maximum number of attempt has been reached.
+          Log "@error Invalid code provided. Number of attempt(s): " idx[0]
+          // Provide feedback about the error message to user.
+          otpUiFeedback.errorMessage = "The provided code is not valid."
 //  Maximum attempts reached. OTP validation failed!
 Log "@error Maximum attempts reached. OTP validation failed!"
 // OTP validation has failed.
