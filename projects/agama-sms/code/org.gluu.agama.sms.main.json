@@ -292,7 +292,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2655.0002593213158,
 				"y": 603.5792339867169
@@ -896,7 +896,7 @@
 				"agamaData": {
 					"id": "Agama-start-Flow-80c520ea-1fc3-4a01-b067-cd53bd0af068",
 					"type": "Agama-start-Flow",
-					"displayName": "OTP SMS flow",
+					"displayName": "Login flow",
 					"hasComment": true,
 					"comment": "Start the excecution of the main flow",
 					"isTopLevelFlow": true,
@@ -914,7 +914,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -1465,8 +1465,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1980.4,
-		"y": -234,
+		"x": 11,
+		"y": 100,
 		"zoom": 1
 	}
 }
