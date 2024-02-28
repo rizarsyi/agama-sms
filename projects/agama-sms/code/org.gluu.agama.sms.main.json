@@ -1,6 +1,156 @@
 {
 	"nodes": [
 		{
+			"width": 203,
+			"height": 30,
+			"id": "Agama-note-a8d291b3-9b96-4275-a3b5-2538564380b4",
+			"position": {
+				"x": 2254.4,
+				"y": 509
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-a8d291b3-9b96-4275-a3b5-2538564380b4",
+				"type": "Agama-note",
+				"notes": "Launch the OTP code flow",
+				"position": {
+					"x": 2254.4,
+					"y": 509
+				}
+			},
+			"positionAbsolute": {
+				"x": 2254.4,
+				"y": 509
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 68,
+			"id": "Agama-note-a05e5857-db97-4a88-aacf-33d70ed86be5",
+			"position": {
+				"x": 1343,
+				"y": 451
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-a05e5857-db97-4a88-aacf-33d70ed86be5",
+				"type": "Agama-note",
+				"notes": "The provided credentials is valid. So next step is to send OTP code to the user mobile phone.",
+				"position": {
+					"x": 1343,
+					"y": 451
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1343,
+				"y": 451
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-228ab5f9-13c0-4067-a35c-e556c8591715",
+			"position": {
+				"x": 1640,
+				"y": 209
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-228ab5f9-13c0-4067-a35c-e556c8591715",
+				"type": "Agama-note",
+				"notes": "The user credentials is still no valid after multiple attempt.",
+				"position": {
+					"x": 1640,
+					"y": 209
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1640,
+				"y": 209
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 68,
+			"id": "Agama-note-fe6c045e-117d-4234-b5db-7f66c1eda325",
+			"position": {
+				"x": 589,
+				"y": -62
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-fe6c045e-117d-4234-b5db-7f66c1eda325",
+				"type": "Agama-note",
+				"notes": "The REPEAT block is used to show login form to user X times max. This improve user experience and the the security posture.",
+				"position": {
+					"x": 589,
+					"y": -62
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 589,
+				"y": -62
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-ff6dc197-de8e-4940-a509-3ac2562ff72a",
+			"position": {
+				"x": 1085,
+				"y": 196
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-ff6dc197-de8e-4940-a509-3ac2562ff72a",
+				"type": "Agama-note",
+				"notes": "Here we send the user credentials to IDP server for validation",
+				"position": {
+					"x": 1085,
+					"y": 196
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1085,
+				"y": 196
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-515b73e7-15ce-432c-a4ff-71070f36044f",
+			"position": {
+				"x": -44,
+				"y": -39
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-515b73e7-15ce-432c-a4ff-71070f36044f",
+				"type": "Agama-note",
+				"notes": "The OTP SMS flow start here with the Start node. Configuration can be added and tuned.",
+				"position": {
+					"x": -44,
+					"y": -39
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": -44,
+				"y": -39
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "finish-4b7a40cc-68ca-4754-8ffb-cdb4133d908a",
@@ -740,7 +890,7 @@
 				"agamaData": {
 					"id": "Agama-start-Flow-80c520ea-1fc3-4a01-b067-cd53bd0af068",
 					"type": "Agama-start-Flow",
-					"displayName": "SMS main flow",
+					"displayName": "OTP SMS flow",
 					"hasComment": true,
 					"comment": "Start the excecution of the main flow",
 					"isTopLevelFlow": true,
@@ -758,7 +908,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -836,9 +986,9 @@
 					"id": "Agama-trigger-Node-ed7a50fb-2e9a-48dc-a8a5-17a604a094d5",
 					"parentId": "Agama-log-Node-0b87511a-8528-47cf-bd66-97f892c01d8a",
 					"type": "Agama-trigger-Node",
-					"displayName": "Launch OTP UI",
+					"displayName": "Launch OTP  Flow",
 					"hasComment": true,
-					"comment": "Launch the UI to collect OTP Code from user.",
+					"comment": "Trigger OTP subflow",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
@@ -1309,8 +1459,8 @@
 		}
 	],
 	"viewport": {
-		"x": 37,
-		"y": 150,
+		"x": -1980.4,
+		"y": -234,
 		"zoom": 1
 	}
 }
