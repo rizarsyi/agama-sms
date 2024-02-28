@@ -28,6 +28,10 @@ y = Repeat 3 times max
           Log "@error Invalid code provided. Number of attempt(s): " idx[0]
           // Provide feedback to user.
           otpUiFeedback.errorMessage = "The provided code is not valid."
+     // Log new code request
+     Log "@info User has requested a new code."
+     // Resend OTP code to user
+     resendHasSucceed = Call otpService sendOTPCode username
 //  Maximum attempts reached. OTP validation failed!
 Log "@error Maximum attempts reached. OTP validation failed!"
 // OTP validation has failed.
