@@ -3,6 +3,97 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-call-Node-e929f2b6-1c67-49bf-a0d0-2b35ca8e8754",
+			"position": {
+				"x": 1567,
+				"y": 258.60525633364966
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-e929f2b6-1c67-49bf-a0d0-2b35ca8e8754",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 1567,
+					"y": 258.60525633364966
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-e929f2b6-1c67-49bf-a0d0-2b35ca8e8754",
+					"parentId": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+					"type": "Agama-call-Node",
+					"displayName": "Resend OTP code ",
+					"hasComment": true,
+					"comment": "Resend OTP code to user",
+					"javaClassName": "",
+					"javaMethodName": "sendOTPCode",
+					"javaVariableName": "otpService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"arguments": [
+						"username"
+					],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "resendHasSucceed"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1567,
+				"y": 258.60525633364966
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+			"position": {
+				"x": 1367,
+				"y": 258.60525633364966
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-when-Node-ac81dc75-0694-44a9-93e0-3c5ca270cb6d",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 1367,
+					"y": 258.60525633364966
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+					"parentId": "Agama-when-Node-ac81dc75-0694-44a9-93e0-3c5ca270cb6d",
+					"type": "Agama-log-Node",
+					"displayName": "Log new code request",
+					"hasComment": true,
+					"comment": "Log new code request",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"User has requested a new code.\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1367,
+				"y": 258.60525633364966
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-assignment-Node-b78572cf-6c8f-4306-aac2-47ba482a3518",
 			"position": {
 				"x": 2088,
@@ -41,7 +132,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2088,
@@ -1227,11 +1318,46 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-when-Node-ac81dc75-0694-44a9-93e0-3c5ca270cb6d-Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7-72e0b339-d362-430e-8be4-d2e45e192421",
+			"type": "straight",
+			"source": "Agama-when-Node-ac81dc75-0694-44a9-93e0-3c5ca270cb6d",
+			"target": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-ac81dc75-0694-44a9-93e0-3c5ca270cb6d.FAILURE"
+		},
+		{
+			"id": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7-Agama-call-Node-e929f2b6-1c67-49bf-a0d0-2b35ca8e8754-6df8f376-f48f-4320-9bdb-d3c087b0d83e",
+			"type": "straight",
+			"source": "Agama-log-Node-2cd40759-b187-4ffb-a437-ed1e71b348f7",
+			"target": "Agama-call-Node-e929f2b6-1c67-49bf-a0d0-2b35ca8e8754",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -982,
-		"y": -258,
+		"x": -471,
+		"y": 51,
 		"zoom": 1
 	}
 }
