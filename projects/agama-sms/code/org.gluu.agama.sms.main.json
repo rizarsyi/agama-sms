@@ -16,13 +16,14 @@
 				"position": {
 					"x": 2254.4,
 					"y": 509
-				}
+				},
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 2254.4,
 				"y": 509
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -41,7 +42,8 @@
 				"position": {
 					"x": 1343,
 					"y": 451
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -66,7 +68,8 @@
 				"position": {
 					"x": 1640,
 					"y": 209
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -91,7 +94,8 @@
 				"position": {
 					"x": 589,
 					"y": -62
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -116,7 +120,8 @@
 				"position": {
 					"x": 1085,
 					"y": 196
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -141,7 +146,8 @@
 				"position": {
 					"x": -44,
 					"y": -39
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -286,7 +292,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2655.0002593213158,
 				"y": 603.5792339867169
