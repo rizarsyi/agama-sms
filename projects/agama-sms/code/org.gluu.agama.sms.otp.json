@@ -5,7 +5,7 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
 			"position": {
-				"x": 2217,
+				"x": 2216,
 				"y": 258.60525633364966
 			},
 			"type": "assignment",
@@ -17,16 +17,16 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2217,
+					"x": 2216,
 					"y": 258.60525633364966
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
 					"parentId": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
 					"type": "Agama-assignment-Node",
-					"displayName": "UIFeedback",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Provide feedback about the error message to user.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -38,12 +38,13 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2217,
+				"x": 2216,
 				"y": 258.60525633364966
 			}
 		},
@@ -116,7 +117,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Provide feedback about the otp resend error to user.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -131,7 +132,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2094,
