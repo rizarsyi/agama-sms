@@ -31,11 +31,11 @@ count = Repeat 3 times max
           // Check if OTP validation vas okay
           When otpFeedBack.success is true
                // The main flow has completed successfully.
-               it_gjmox = {success:true, data: { userId: credentials.username}}
-               Finish it_gjmox
+               it_jsstv = {success:true, data: { userId: credentials.username}}
+               Finish it_jsstv
           // Closing the main flow with error.
-          it_fvwck = {success:false, error: "The flow has been completed with error."}
-          Finish it_fvwck
+          it_ccjuz = {success:false, error: "The flow has been completed with error."}
+          Finish it_ccjuz
      // Invalid credentials provided.
      Log "@error Invalid credentials provided."
      // Provide feedback about the error message to user.
@@ -43,5 +43,5 @@ count = Repeat 3 times max
 // Maximum attempts reached. Password validation failed!
 Log "@info Maximum attempts reached. Password validation failed!"
 // Maximum attempts reached. Password validation failed!
-it_rjyqc = {success:false, error: "Password validation failed!"}
-Finish it_rjyqc
+it_bcoaq = {success:false, error: "Password validation failed!"}
+Finish it_bcoaq
