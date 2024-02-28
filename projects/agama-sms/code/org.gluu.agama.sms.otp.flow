@@ -32,7 +32,7 @@ y = Repeat 3 times max
      Log "@info User has requested a new code."
      // Resend OTP code to user
      resendHasSucceed = Call otpService sendOTPCode username
-     When resendHasSucceed is not null
+     When resendHasSucceed is null
           Log "@info New OTP code send successfully!" resendHasSucceed
           otpUiFeedback.infoMessage = "A new OTP code has been send to you on your mobile phone."
      Log "@info Fail to resend new code to user. " resendHasSucceed
