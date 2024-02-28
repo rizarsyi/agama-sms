@@ -33,9 +33,10 @@
 					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2017,
@@ -80,7 +81,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -122,7 +124,8 @@
 					"logMessage": "\"New OTP code send successfully!\" resendHasSucceed",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -159,7 +162,7 @@
 					"conditions": [
 						{
 							"variable": "resendHasSucceed",
-							"operator": "is not",
+							"operator": "is",
 							"dataValue": "null",
 							"combinator": "none"
 						}
@@ -171,9 +174,10 @@
 				"handles": [
 					"Agama-when-Node-1db88cf1-f239-47ea-ae4c-fb5d481e2750.FAILURE",
 					"Agama-when-Node-1db88cf1-f239-47ea-ae4c-fb5d481e2750.SUCCESS"
-				]
+				],
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1767,
@@ -278,8 +282,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-b78572cf-6c8f-4306-aac2-47ba482a3518",
 			"position": {
-				"x": 2113,
-				"y": 650.6052563336497
+				"x": 2121,
+				"y": 661.6052563336497
 			},
 			"type": "assignment",
 			"data": {
@@ -290,8 +294,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2113,
-					"y": 650.6052563336497
+					"x": 2121,
+					"y": 661.6052563336497
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-b78572cf-6c8f-4306-aac2-47ba482a3518",
@@ -317,8 +321,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2113,
-				"y": 650.6052563336497
+				"x": 2121,
+				"y": 661.6052563336497
 			}
 		},
 		{
@@ -1608,8 +1612,8 @@
 		}
 	],
 	"viewport": {
-		"x": -774,
-		"y": -153,
+		"x": -858,
+		"y": 5,
 		"zoom": 1
 	}
 }
