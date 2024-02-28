@@ -3,6 +3,53 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
+			"position": {
+				"x": 2217,
+				"y": 258.60525633364966
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 2217,
+					"y": 258.60525633364966
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
+					"parentId": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
+					"type": "Agama-assignment-Node",
+					"displayName": "UIFeedback",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "A new OTP code has been send to you on your mobile phone.",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 2217,
+				"y": 258.60525633364966
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
 			"position": {
 				"x": 2017,
@@ -24,13 +71,13 @@
 					"id": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
 					"parentId": "Agama-when-Node-1db88cf1-f239-47ea-ae4c-fb5d481e2750",
 					"type": "Agama-log-Node",
-					"displayName": "Log fail code resend",
+					"displayName": "Log code resend",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
+					"logMessage": "\"New OTP code send successfully!\" resendHasSucceed",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -48,8 +95,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-7a919d0c-7cf2-4696-a366-aa5ad01144d9",
 			"position": {
-				"x": 2088,
-				"y": 491.60525633364966
+				"x": 2094,
+				"y": 516.6052563336497
 			},
 			"type": "assignment",
 			"data": {
@@ -60,8 +107,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2088,
-					"y": 491.60525633364966
+					"x": 2094,
+					"y": 516.6052563336497
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-7a919d0c-7cf2-4696-a366-aa5ad01144d9",
@@ -76,7 +123,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "A new OTP code has been send to you on your mobile phone.",
+							"assignmentExpression": "Error occurs while sending new code to you. Please contact site administrator.",
 							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
@@ -84,11 +131,11 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2088,
-				"y": 491.60525633364966
+				"x": 2094,
+				"y": 516.6052563336497
 			}
 		},
 		{
@@ -96,8 +143,8 @@
 			"height": 124,
 			"id": "Agama-log-Node-fb6f7643-dca2-4ea6-8ffb-a0bfc7bdda6b",
 			"position": {
-				"x": 1888,
-				"y": 491.60525633364966
+				"x": 1889,
+				"y": 519.6052563336497
 			},
 			"type": "log",
 			"data": {
@@ -108,20 +155,20 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1888,
-					"y": 491.60525633364966
+					"x": 1889,
+					"y": 519.6052563336497
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-fb6f7643-dca2-4ea6-8ffb-a0bfc7bdda6b",
 					"parentId": "Agama-when-Node-1db88cf1-f239-47ea-ae4c-fb5d481e2750",
 					"type": "Agama-log-Node",
-					"displayName": "Log new code resend",
+					"displayName": "Log error code",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"New OTP code send successfully!\" resendHasSucceed",
+					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -129,8 +176,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1888,
-				"y": 491.60525633364966
+				"x": 1889,
+				"y": 519.6052563336497
 			},
 			"dragging": false
 		},
@@ -177,7 +224,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1767,
@@ -1609,11 +1656,28 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-1db88cf1-f239-47ea-ae4c-fb5d481e2750.FAILURE"
+		},
+		{
+			"id": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226-Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43-77b83c07-924d-4365-b39a-787bb20ee62b",
+			"type": "straight",
+			"source": "Agama-log-Node-f7e50496-288f-4d98-8112-e71b1ddbc226",
+			"target": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -858,
-		"y": 5,
+		"x": -860,
+		"y": -40,
 		"zoom": 1
 	}
 }
