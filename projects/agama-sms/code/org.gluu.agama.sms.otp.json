@@ -26,7 +26,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Provide feedback",
 					"hasComment": true,
-					"comment": "Provide feedback about the error message to user.",
+					"comment": "Provide feedback to user.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -38,7 +38,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
@@ -80,7 +81,8 @@
 					"logMessage": "\"Invalid code provided. Number of attempt(s): \" idx[0]",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -126,7 +128,8 @@
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "OTP code is valid"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -175,7 +178,8 @@
 				"handles": [
 					"Agama-when-Node-b7b973bf-241f-42a8-8912-bd49a76ce2e7.FAILURE",
 					"Agama-when-Node-b7b973bf-241f-42a8-8912-bd49a76ce2e7.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -217,7 +221,8 @@
 					"logMessage": "\"OTP validation result is:\" otpValidationResult",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -267,7 +272,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "otpValidationResult"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -424,8 +430,8 @@
 			}
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 124,
 			"id": "Agama-log-Node-c19f4a59-7153-432b-b971-713922e1f6f9",
 			"position": {
 				"x": 880,
@@ -455,7 +461,7 @@
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
 				},
-				"skake": true
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
