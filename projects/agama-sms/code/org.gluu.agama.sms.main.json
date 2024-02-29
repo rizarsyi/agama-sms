@@ -3,6 +3,56 @@
 		{
 			"width": 270,
 			"height": 42,
+			"id": "Agama-note-4d8c9e1d-27dd-4447-9f94-687cdb2c8004",
+			"position": {
+				"x": 2866,
+				"y": 492
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-4d8c9e1d-27dd-4447-9f94-687cdb2c8004",
+				"type": "Agama-note",
+				"notes": "Closing the flow as completed with error.",
+				"position": {
+					"x": 2866,
+					"y": 492
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2866,
+				"y": 492
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-1ae67b82-ac49-4d67-b69b-bdabbd08f1ef",
+			"position": {
+				"x": 2776,
+				"y": 767
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-1ae67b82-ac49-4d67-b69b-bdabbd08f1ef",
+				"type": "Agama-note",
+				"notes": "Closing the flow as completed successfully.",
+				"position": {
+					"x": 2776,
+					"y": 767
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2776,
+				"y": 767
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
 			"id": "Agama-note-18350bcd-6693-412f-84e0-78235a8aed11",
 			"position": {
 				"x": 1635,
@@ -16,9 +66,10 @@
 				"position": {
 					"x": 1635,
 					"y": 496
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1635,
 				"y": 496
@@ -26,29 +77,29 @@
 			"dragging": false
 		},
 		{
-			"width": 203,
+			"width": 211,
 			"height": 30,
 			"id": "Agama-note-a8d291b3-9b96-4275-a3b5-2538564380b4",
 			"position": {
-				"x": 2254.4,
-				"y": 509
+				"x": 2264.4,
+				"y": 499
 			},
 			"type": "notes",
 			"data": {
 				"id": "Agama-note-a8d291b3-9b96-4275-a3b5-2538564380b4",
 				"type": "Agama-note",
-				"notes": "Launch the OTP code flow",
+				"notes": "Launch the OTP code flow.",
 				"position": {
-					"x": 2254.4,
-					"y": 509
+					"x": 2264.4,
+					"y": 499
 				},
 				"skake": false
 			},
 			"positionAbsolute": {
-				"x": 2254.4,
-				"y": 509
+				"x": 2264.4,
+				"y": 499
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1490,8 +1541,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1563,
-		"y": -184,
+		"x": -39,
+		"y": 178,
 		"zoom": 1
 	}
 }
