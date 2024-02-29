@@ -1,6 +1,156 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-db4c3d69-cc45-43b1-9487-f1db63f5dc03",
+			"position": {
+				"x": 1832.9433450392728,
+				"y": 946.0605818758354
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-db4c3d69-cc45-43b1-9487-f1db63f5dc03",
+				"type": "Agama-note",
+				"notes": "Closing the subflow as completed successfully.",
+				"position": {
+					"x": 1832.9433450392728,
+					"y": 946.0605818758354
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 1832.9433450392728,
+				"y": 946.0605818758354
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-725dd6d7-456f-4447-96ed-4b7db4a87df5",
+			"position": {
+				"x": 2005.7416462099945,
+				"y": 692.8511900613125
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-725dd6d7-456f-4447-96ed-4b7db4a87df5",
+				"type": "Agama-note",
+				"notes": "The OTP code provided is not valid.",
+				"position": {
+					"x": 2005.7416462099945,
+					"y": 692.8511900613125
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2005.7416462099945,
+				"y": 692.8511900613125
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-cd0b5af9-0b51-498f-b03a-b910127c0292",
+			"position": {
+				"x": 1925.3305555661932,
+				"y": 458.46141520597735
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-cd0b5af9-0b51-498f-b03a-b910127c0292",
+				"type": "Agama-note",
+				"notes": "Error sending new OTO code to user.",
+				"position": {
+					"x": 1925.3305555661932,
+					"y": 458.46141520597735
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1925.3305555661932,
+				"y": 458.46141520597735
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-ee7d8b3f-9cfd-4dff-8990-dfc59ce39a03",
+			"position": {
+				"x": 2023,
+				"y": 199
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-ee7d8b3f-9cfd-4dff-8990-dfc59ce39a03",
+				"type": "Agama-note",
+				"notes": "New OTP code has been send to the user.",
+				"position": {
+					"x": 2023,
+					"y": 199
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2023,
+				"y": 199
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-73683a97-7015-43a4-b628-f43b5074efbc",
+			"position": {
+				"x": 1244,
+				"y": 689
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-73683a97-7015-43a4-b628-f43b5074efbc",
+				"type": "Agama-note",
+				"notes": "Check user provide OTP code against generated code.",
+				"position": {
+					"x": 1244,
+					"y": 689
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1244,
+				"y": 689
+			},
+			"dragging": false
+		},
+		{
+			"width": 266,
+			"height": 30,
+			"id": "Agama-note-01a3b8cf-0f4a-4d78-af3f-c848840b879d",
+			"position": {
+				"x": 1367,
+				"y": 214
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-01a3b8cf-0f4a-4d78-af3f-c848840b879d",
+				"type": "Agama-note",
+				"notes": "User has requested new otp code.",
+				"position": {
+					"x": 1367,
+					"y": 214
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1367,
+				"y": 214
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "Agama-assignment-Node-ea3b66e7-3a23-4a31-a4c9-3105b61b3c43",
@@ -660,7 +810,7 @@
 			"dragging": false
 		},
 		{
-			"width": 219,
+			"width": 227,
 			"height": 30,
 			"id": "Agama-note-939c3eb5-5f5b-4a8a-b38e-1e6b06c3fa52",
 			"position": {
@@ -671,7 +821,7 @@
 			"data": {
 				"id": "Agama-note-939c3eb5-5f5b-4a8a-b38e-1e6b06c3fa52",
 				"type": "Agama-note",
-				"notes": "Repeat the process X times",
+				"notes": "Repeat the process X times.",
 				"position": {
 					"x": 612,
 					"y": -7
@@ -686,7 +836,7 @@
 			"dragging": false
 		},
 		{
-			"width": 234,
+			"width": 242,
 			"height": 30,
 			"id": "Agama-note-ee136572-75d5-4c37-b5d8-8d287090a20d",
 			"position": {
@@ -697,7 +847,7 @@
 			"data": {
 				"id": "Agama-note-ee136572-75d5-4c37-b5d8-8d287090a20d",
 				"type": "Agama-note",
-				"notes": "Start OTP Validation subflow",
+				"notes": "Start OTP validation subflow.",
 				"position": {
 					"x": 9,
 					"y": -24.599999999999966
@@ -1677,8 +1827,8 @@
 		}
 	],
 	"viewport": {
-		"x": 64.40511339733052,
-		"y": 132.87915287423323,
-		"zoom": 0.5863005316097448
+		"x": -134.5786502015019,
+		"y": 20.881087020335485,
+		"zoom": 0.584496487035563
 	}
 }
