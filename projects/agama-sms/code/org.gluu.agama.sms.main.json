@@ -1,6 +1,31 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-18350bcd-6693-412f-84e0-78235a8aed11",
+			"position": {
+				"x": 1635,
+				"y": 496
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-18350bcd-6693-412f-84e0-78235a8aed11",
+				"type": "Agama-note",
+				"notes": "Generate and send OTP code to user.",
+				"position": {
+					"x": 1635,
+					"y": 496
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 1635,
+				"y": 496
+			},
+			"dragging": false
+		},
+		{
 			"width": 203,
 			"height": 30,
 			"id": "Agama-note-a8d291b3-9b96-4275-a3b5-2538564380b4",
@@ -54,27 +79,27 @@
 		},
 		{
 			"width": 270,
-			"height": 42,
+			"height": 55,
 			"id": "Agama-note-228ab5f9-13c0-4067-a35c-e556c8591715",
 			"position": {
-				"x": 1640,
-				"y": 209
+				"x": 1652,
+				"y": 197
 			},
 			"type": "notes",
 			"data": {
 				"id": "Agama-note-228ab5f9-13c0-4067-a35c-e556c8591715",
 				"type": "Agama-note",
-				"notes": "The user credentials is still no valid after multiple attempt.",
+				"notes": "The user credentials is still no valid after configured maximum attempt.",
 				"position": {
-					"x": 1640,
-					"y": 209
+					"x": 1652,
+					"y": 197
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1640,
-				"y": 209
+				"x": 1652,
+				"y": 197
 			},
 			"dragging": false
 		},
@@ -135,8 +160,8 @@
 			"height": 55,
 			"id": "Agama-note-515b73e7-15ce-432c-a4ff-71070f36044f",
 			"position": {
-				"x": -44,
-				"y": -39
+				"x": 2,
+				"y": -41
 			},
 			"type": "notes",
 			"data": {
@@ -144,15 +169,15 @@
 				"type": "Agama-note",
 				"notes": "The OTP SMS flow start here with the Start node. Configuration can be added and tuned.",
 				"position": {
-					"x": -44,
-					"y": -39
+					"x": 2,
+					"y": -41
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": -44,
-				"y": -39
+				"x": 2,
+				"y": -41
 			},
 			"dragging": false
 		},
@@ -914,7 +939,7 @@
 				"x": 30,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 30,
@@ -1465,8 +1490,8 @@
 		}
 	],
 	"viewport": {
-		"x": 11,
-		"y": 100,
+		"x": -1563,
+		"y": -184,
 		"zoom": 1
 	}
 }
