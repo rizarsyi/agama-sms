@@ -27,55 +27,55 @@ public class JansOTPService extends OTPService {
 
     public static final int OTP_CODE_LENGTH = 6;
 
-    public  JansOTPService(HashMap config){
-        flowConfig=config;
-        logger.info("Flow config provided is  {}.", config);
+    public JansOTPService(HashMap config) {
+        flowConfig = config;
+        logger.debug("Flow config provided is  {}.", config);
     }
 
-    public  JansOTPService(){
+    public JansOTPService() {
     }
+
     @Override
     public boolean validateCreds(String username, String password) {
         logger.info("Validating user credentials {}.", username);
         return authenticationService.authenticate(username, password);
-        logger.info("User validation done successfully.");
     }
 
     @Override
     public String sendOTPCode(String username) {
-        try{
+        try {
             logger.info("Sending OTP Code via SMS to {}.", username);
             String phone = getUserPhoneNumber(username);
             String maskedPone = maskPhone(phone);
             String otpCode = generateOTpCode(OTP_CODE_LENGTH);
             logger.info("Generated OTP code is {}.", otpCode);
-            String message= "Hi "+username+ ", Welcome to AgamaLab. This is your OTP Code to complete your login process: "+otpCode;
+            String message = "Hi " + username + ", Welcome to AgamaLab. This is your OTP Code to complete your login process: " + otpCode;
             associateGeneratedCodeToUser(username, otpCode);
-            sendTwilioSms(username,phone, message);
+            sendTwilioSms(username, phone, message);
             return maskedPone;
-        }catch (Exception exception){
-            logger.error("Error occur while sending  OTP Code via SMS to {}, error {}.", username, exception);
+        } catch (Exception exception) {
+            logger.error("Error occur while sending  OTP code via SMS to {}. Error {}.", username, exception);
             return null;
         }
     }
 
     @Override
     public boolean validateOTPCode(String username, String code) {
-        try{
-            logger.info("Validating OTP Code {} provided by {}.", code, username);
-            String storeCode = userCodes.getOrDefault(username,"NULL");
-            if(storeCode.equalsIgnoreCase(code)){
+        try {
+            logger.info("Validating OTP code {} provided by {}.", code, username);
+            String storeCode = userCodes.getOrDefault(username, "NULL");
+            if (storeCode.equalsIgnoreCase(code)) {
                 userCodes.remove(username);
                 return true;
             }
             return false;
-        }catch (Exception exception){
-            logger.info("OTP Code {} provided by {} is not valid. Error: {} ", code, username, exception);
+        } catch (Exception exception) {
+            logger.info("OTP code {} provided by {} is not valid. Error: {} ", code, username, exception);
             return false;
         }
     }
 
-    private String generateOTpCode(int codeLength){
+    private String generateOTpCode(int codeLength) {
         String numbers = "0123456789";
         SecureRandom random = new SecureRandom();
         char[] otp = new char[codeLength];
@@ -85,10 +85,10 @@ public class JansOTPService extends OTPService {
         return new String(otp);
     }
 
-    private String getUserPhoneNumber(String username){
-        User currentUser = getUser(USERNAME,username);
+    private String getUserPhoneNumber(String username) {
+        User currentUser = getUser(USERNAME, username);
         String phoneNumber = currentUser.getAttribute("mobile");
-        if(phoneNumber == null){
+        if (phoneNumber == null) {
             phoneNumber = currentUser.getAttribute("telephoneNumber");
         }
         return phoneNumber;
@@ -98,37 +98,36 @@ public class JansOTPService extends OTPService {
         return userService.getUserByAttribute(attributeName, value, true);
     }
 
-    private boolean associateGeneratedCodeToUser(String username, String code){
-        try{
-            userCodes.put(username,code);
-            return  true;
-        }catch (Exception exception){
+    private boolean associateGeneratedCodeToUser(String username, String code) {
+        try {
+            userCodes.put(username, code);
+            return true;
+        } catch (Exception exception) {
             logger.error("Error associating OTP SMS code to user {}, error: {} .", username, exception);
             return false;
         }
     }
 
     private String maskPhone(String phone) {
-        if(phone == null) {
+        if (phone == null) {
             return null;
         }
         int maskLength = phone.length() - 6;
         if (maskLength <= 0)
             return phone;
-        return phone.substring(0,4)+"x".repeat(maskLength) + phone.substring(phone.length()-3);
+        return phone.substring(0, 4) + "x".repeat(maskLength) + phone.substring(phone.length() - 3);
     }
 
-    private boolean sendTwilioSms(String userName, String phone, String message){
-        try{
-            PhoneNumber FROM_NUMBER =new com.twilio.type.PhoneNumber(flowConfig.get("FROM_NUMBER")) ;
+    private boolean sendTwilioSms(String userName, String phone, String message) {
+        try {
+            PhoneNumber FROM_NUMBER = new com.twilio.type.PhoneNumber(flowConfig.get("FROM_NUMBER"));
             PhoneNumber TO_NUMBER = new com.twilio.type.PhoneNumber(phone);
-            logger.info("Flow config is {} {} {}.", flowConfig.get("FROM_NUMBER"), flowConfig.get("ACCOUNT_SID"), flowConfig.get("AUTH_TOKEN"));
             Twilio.init(flowConfig.get("ACCOUNT_SID"), flowConfig.get("AUTH_TOKEN"));
             Message.creator(TO_NUMBER, FROM_NUMBER, message).create();
-            logger.info("OTP Code has been successfully send to {} on phone number {} .", userName, phone);
+            logger.info("OTP code has been successfully send to {} on phone number {} .", userName, phone);
             return true;
-        }catch (Exception exception){
-            logger.error("Error Sending OTP code to user {} on pone number {} : error {} .", userName, phone, exception);
+        } catch (Exception exception) {
+            logger.error("Error sending OTP code to user {} on pone number {} : error {} .", userName, phone, exception);
             return false;
         }
     }
