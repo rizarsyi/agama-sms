@@ -16,9 +16,10 @@
 				"position": {
 					"x": 1832.9433450392728,
 					"y": 946.0605818758354
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1832.9433450392728,
 				"y": 946.0605818758354
@@ -41,7 +42,8 @@
 				"position": {
 					"x": 2005.7416462099945,
 					"y": 692.8511900613125
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -66,7 +68,8 @@
 				"position": {
 					"x": 1925.3305555661932,
 					"y": 458.46141520597735
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -91,7 +94,8 @@
 				"position": {
 					"x": 2023,
 					"y": 199
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -116,7 +120,8 @@
 				"position": {
 					"x": 1244,
 					"y": 689
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -141,7 +146,8 @@
 				"position": {
 					"x": 1367,
 					"y": 214
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -854,7 +860,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 9,
 				"y": -24.599999999999966
@@ -1197,7 +1203,7 @@
 					"displayName": "SMS OTP Flow",
 					"hasComment": true,
 					"comment": "Start subflow for user otp code validation",
-					"isTopLevelFlow": true,
+					"isTopLevelFlow": false,
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
@@ -1827,8 +1833,8 @@
 		}
 	],
 	"viewport": {
-		"x": -134.5786502015019,
-		"y": 20.881087020335485,
-		"zoom": 0.584496487035563
+		"x": 21,
+		"y": 162,
+		"zoom": 1
 	}
 }
