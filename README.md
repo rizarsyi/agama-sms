@@ -1,1 +1,2 @@
-# agama-sms
+### agama-sms
+ OTP authentication with SMS
